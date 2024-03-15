@@ -13,6 +13,7 @@ namespace BaseApi.Controllers
         {
             this.postService = postService;
         }
+
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Posts>>> GetPosts()
         {
