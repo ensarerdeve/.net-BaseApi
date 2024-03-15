@@ -1,0 +1,28 @@
+﻿version: '3.8'
+
+services:
+  mongodb:
+    image: mongo:7.0
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: mongoadmin
+      MONGO_INITDB_ROOT_PASSWORD: ensar1234
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongodata:/data/db
+
+  myapi:
+    build: .
+    container_name: my-api
+    restart: always
+    ports:
+      - "5000:80"
+    depends_on:
+      - mongodb
+    environment:
+      - MongoDB__ConnectionString=mongodb://mongoadmin:ensar1234@mongodb:27017
+      - MongoDB__DatabaseName=UserDB
+
+volumes:
+  mongodata:
+    driver: local
