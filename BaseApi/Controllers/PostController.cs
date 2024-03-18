@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace BaseApi.Controllers
 {
     [ApiController]
-    [Route("Posts")]
+    [Route("Post")]
     public class PostController : ControllerBase
     {
         private readonly PostService postService;

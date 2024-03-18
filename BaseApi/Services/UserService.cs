@@ -1,13 +1,14 @@
 ﻿using BaseApi.Models;
+using BaseApi.Repositories;
 using BaseApi.Repository;
 
 namespace BaseApi.Service
 {
-    public class UserService : IRepository<User>
+    public class UserService : IUserRepository
     {
-        private readonly IRepository<User> _userRepository;
+        private readonly IUserRepository _userRepository;
 
-        public UserService(IRepository<User> userRepository)
+        public UserService(IUserRepository userRepository)
         {
             _userRepository = userRepository;
         }
@@ -34,6 +35,11 @@ namespace BaseApi.Service
         public async Task<bool> Delete(Guid id)
         {
            return await _userRepository.Delete(id);
+        }
+
+        public Task<User> GetByName(string username)
+        {
+            return _userRepository.GetByName(username);
         }
     }
 }

@@ -1,10 +1,11 @@
 ﻿using BaseApi.Models;
 using BaseApi.MongoDB;
+using BaseApi.Repositories;
 using MongoDB.Driver;
 
 namespace BaseApi.Repository
 {
-    public class UserRepository : IRepository<User>
+    public class UserRepository : IUserRepository
     {
         private readonly MongoDBModel _database;
         private readonly IMongoCollection<User> _collection;
@@ -23,6 +24,11 @@ namespace BaseApi.Repository
         public async Task<User> GetById(Guid id)
         {
             return await _collection.Find(p => p.Id == id).FirstOrDefaultAsync();
+        }
+
+        public async Task<User> GetByName(string username)
+        {
+            return await _collection.Find(user => user.Name == username).FirstOrDefaultAsync();
         }
 
         public async Task<User> Create(User newUser)

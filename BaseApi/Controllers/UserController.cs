@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace BaseApi.Controllers
 {
     [ApiController]
-    [Route("api/[controller]")]
+    [Route("User")]
     public class UserController : ControllerBase
     {
         private readonly UserService userService;
@@ -26,6 +26,17 @@ namespace BaseApi.Controllers
         public async Task<ActionResult<User>> GetUsersById(Guid id)
         {
             var user = await userService.GetById(id);
+            if (user == null)
+            {
+                return NotFound();
+            }
+            return Ok(user);
+        }
+
+        [HttpGet("/name/{username}")]
+        public async Task<ActionResult<User>> GetUserByUsername(string username)
+        {
+            var user = await userService.GetByName(username);
             if (user == null)
             {
                 return NotFound();
