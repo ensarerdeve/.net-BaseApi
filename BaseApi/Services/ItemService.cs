@@ -3,16 +3,16 @@ using BaseApi.Repository;
 
 namespace BaseApi.Service
 {
-    public class ItemService : IRepository<Items>
+    public class ItemService : IRepository<Item>
     {
-        private readonly IRepository<Items> _repository;
+        private readonly IRepository<Item> _repository;
 
-        public ItemService(IRepository<Items> repository)
+        public ItemService(IRepository<Item> repository)
         {
             _repository = repository;
         }
 
-        public async Task<Items> Create(Items newItem)
+        public async Task<Item> Create(Item newItem)
         {
             newItem.Id = Guid.NewGuid();
             return await _repository.Create(newItem);
@@ -24,18 +24,18 @@ namespace BaseApi.Service
         }
 
 
-        public async Task<IEnumerable<Items>> GetAll()
+        public async Task<IEnumerable<Item>> GetAll()
         {
             return await _repository.GetAll();
         }
 
-        public async Task<Items> GetById(Guid id)
+        public async Task<Item> GetById(Guid id)
         {
             return await _repository.GetById(id);
         }
 
 
-        public async Task<bool> Update(Guid id, Items updatedItem)
+        public async Task<bool> Update(Guid id, Item updatedItem)
         {
             return await _repository.Update(id, updatedItem);
         }

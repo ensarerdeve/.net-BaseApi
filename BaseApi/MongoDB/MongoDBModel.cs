@@ -14,9 +14,9 @@ namespace BaseApi.MongoDB
             _database = client.GetDatabase(settings.Value.DatabaseName);
         }
 
-        public IMongoCollection<Users> Users => _database.GetCollection<Users>("Users");
-        public IMongoCollection<Posts> Posts => _database.GetCollection<Posts>("Posts");
-        public IMongoCollection<Items> Items => _database.GetCollection<Items>("Items");
+        public IMongoCollection<User> Users => _database.GetCollection<User>("Users");
+        public IMongoCollection<Post> Posts => _database.GetCollection<Post>("Posts");
+        public IMongoCollection<Item> Items => _database.GetCollection<Item>("Items");
 
     }
 }

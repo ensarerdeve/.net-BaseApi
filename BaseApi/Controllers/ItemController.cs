@@ -16,25 +16,14 @@ namespace BaseApi.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Items>>> GetAllItems()
+        public async Task<ActionResult<IEnumerable<Item>>> GetAllItems()
         {
             var items = await _itemService.GetAll();
             return Ok(items);
         }
 
-        //[HttpGet]
-        //public async Task<ActionResult<Items>> GetItemsByUserName(string userName)
-        //{
-        //    var user = await _itemService.GetItemsByUserName(userName);
-        //    if (user == null)
-        //    {
-        //        return NotFound();
-        //    }
-        //    return Ok(user);
-        //}
-
         [HttpGet("{id}")]
-        public async Task<ActionResult<Items>> GetItemsById(Guid id)
+        public async Task<ActionResult<Item>> GetItemsById(Guid id)
         {
             var item = await _itemService.GetById(id);
             if (item == null)
@@ -45,14 +34,14 @@ namespace BaseApi.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> CreateItem(Items newItem)
+        public async Task<IActionResult> CreateItem(Item newItem)
         {
             await _itemService.Create(newItem);
             return Ok(newItem);
         }
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> UpdateItem(Guid id, Items updatedItem)
+        public async Task<IActionResult> UpdateItem(Guid id, Item updatedItem)
         {
             await _itemService.Update(id, updatedItem);
             return Ok();

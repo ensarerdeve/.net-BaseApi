@@ -3,31 +3,31 @@ using BaseApi.Repository;
 
 namespace BaseApi.Service
 {
-    public class UserService : IRepository<Users>
+    public class UserService : IRepository<User>
     {
-        private readonly IRepository<Users> _userRepository;
+        private readonly IRepository<User> _userRepository;
 
-        public UserService(IRepository<Users> userRepository)
+        public UserService(IRepository<User> userRepository)
         {
             _userRepository = userRepository;
         }
 
-        public async Task<IEnumerable<Users>> GetAll()
+        public async Task<IEnumerable<User>> GetAll()
         {
             return await _userRepository.GetAll();
         }
 
-        public async Task<Users> GetById(Guid id)
+        public async Task<User> GetById(Guid id)
         {
             return await _userRepository.GetById(id);
         }
 
-        public async Task <Users> Create(Users newUser)
+        public async Task <User> Create(User newUser)
         {
             newUser.Id = Guid.NewGuid();
             return await _userRepository.Create(newUser);
         }
-        public async Task <bool> Update(Guid id, Users updatedUser)
+        public async Task <bool> Update(Guid id, User updatedUser)
         {
             return await _userRepository.Update(id, updatedUser);
         }

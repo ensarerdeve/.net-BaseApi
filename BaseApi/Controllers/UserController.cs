@@ -16,14 +16,14 @@ namespace BaseApi.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Users>>> GetUsers()
+        public async Task<ActionResult<IEnumerable<User>>> GetUsers()
         {
             var users = await userService.GetAll();
             return Ok(users);
         }
 
         [HttpGet("{id}")]
-        public async Task<ActionResult<Users>> GetUsersById(Guid id)
+        public async Task<ActionResult<User>> GetUsersById(Guid id)
         {
             var user = await userService.GetById(id);
             if (user == null)
@@ -34,14 +34,14 @@ namespace BaseApi.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> CreateUser(Users newUser)
+        public async Task<IActionResult> CreateUser(User newUser)
         {
             await userService.Create(newUser);
             return Ok(newUser);
         }
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> UpdateUser(Guid id, Users updatedUser)
+        public async Task<IActionResult> UpdateUser(Guid id, User updatedUser)
         {
             await userService.Update(id, updatedUser);
             return Ok();

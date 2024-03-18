@@ -4,10 +4,10 @@ using MongoDB.Driver;
 
 namespace BaseApi.Repository
 {
-    public class UserRepository : IRepository<Users>
+    public class UserRepository : IRepository<User>
     {
         private readonly MongoDBModel _database;
-        private readonly IMongoCollection<Users> _collection;
+        private readonly IMongoCollection<User> _collection;
 
         public UserRepository(MongoDBModel database)
         {
@@ -15,24 +15,24 @@ namespace BaseApi.Repository
             _collection = _database.Users;
         }
 
-        public async Task<IEnumerable<Users>> GetAll()
+        public async Task<IEnumerable<User>> GetAll()
         {
             return await _collection.Find(_ => true).ToListAsync();
         }
 
-        public async Task<Users> GetById(Guid id)
+        public async Task<User> GetById(Guid id)
         {
             return await _collection.Find(p => p.Id == id).FirstOrDefaultAsync();
         }
 
-        public async Task<Users> Create(Users newUser)
+        public async Task<User> Create(User newUser)
         {
             Guid id = Guid.NewGuid();
             await _collection.InsertOneAsync(newUser);
             return newUser;
         }
 
-        public async Task<bool> Update(Guid id, Users updatedUser)
+        public async Task<bool> Update(Guid id, User updatedUser)
         {
             var result = await _collection.ReplaceOneAsync(p => p.Id == id, updatedUser);
             return result.ModifiedCount > 0;

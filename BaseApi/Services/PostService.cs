@@ -3,14 +3,14 @@ using BaseApi.Repository;
 
 namespace BaseApi.Service
 {
-    public class PostService : IRepository<Posts>
+    public class PostService : IRepository<Post>
     {
-        private readonly IRepository<Posts> _postRepository;
-        public PostService(IRepository<Posts> postRepository) 
+        private readonly IRepository<Post> _postRepository;
+        public PostService(IRepository<Post> postRepository) 
         {
             _postRepository = postRepository;
         }
-        public async Task<Posts> Create(Posts newPost)
+        public async Task<Post> Create(Post newPost)
         {
             newPost.Id = Guid.NewGuid();
             return await _postRepository.Create(newPost);
@@ -21,17 +21,17 @@ namespace BaseApi.Service
             return await _postRepository.Delete(id);
         }
 
-        public async Task<IEnumerable<Posts>> GetAll()
+        public async Task<IEnumerable<Post>> GetAll()
         {
             return await _postRepository.GetAll();
         }
 
-        public async Task<Posts> GetById(Guid id)
+        public async Task<Post> GetById(Guid id)
         {
             return await _postRepository.GetById(id);
         }
 
-        public async Task<bool> Update(Guid id, Posts updatedPost)
+        public async Task<bool> Update(Guid id, Post updatedPost)
         {
             return await _postRepository.Update(id, updatedPost);
         }

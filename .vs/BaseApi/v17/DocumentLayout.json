@@ -1,38 +1,30 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\aytug\\source\\repos\\BaseApi\\",
+  "WorkspaceRootPath": "C:\\Users\\aytug\\OneDrive\\Belgeler\\GitHub\\.net-BaseApi\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1CC822DF-7C54-41FB-8B0F-10ECD0E6FF18}|BaseApi\\BaseApi.csproj|c:\\users\\aytug\\source\\repos\\baseapi\\baseapi\\service\\itemservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1CC822DF-7C54-41FB-8B0F-10ECD0E6FF18}|BaseApi\\BaseApi.csproj|solutionrelative:baseapi\\service\\itemservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1CC822DF-7C54-41FB-8B0F-10ECD0E6FF18}|BaseApi\\BaseApi.csproj|c:\\users\\aytug\\onedrive\\belgeler\\github\\.net-baseapi\\baseapi\\models\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CC822DF-7C54-41FB-8B0F-10ECD0E6FF18}|BaseApi\\BaseApi.csproj|solutionrelative:baseapi\\models\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1CC822DF-7C54-41FB-8B0F-10ECD0E6FF18}|BaseApi\\BaseApi.csproj|c:\\users\\aytug\\source\\repos\\baseapi\\baseapi\\service\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1CC822DF-7C54-41FB-8B0F-10ECD0E6FF18}|BaseApi\\BaseApi.csproj|solutionrelative:baseapi\\service\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1CC822DF-7C54-41FB-8B0F-10ECD0E6FF18}|BaseApi\\BaseApi.csproj|c:\\users\\aytug\\onedrive\\belgeler\\github\\.net-baseapi\\baseapi\\models\\post.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CC822DF-7C54-41FB-8B0F-10ECD0E6FF18}|BaseApi\\BaseApi.csproj|solutionrelative:baseapi\\models\\post.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1CC822DF-7C54-41FB-8B0F-10ECD0E6FF18}|BaseApi\\BaseApi.csproj|c:\\users\\aytug\\source\\repos\\baseapi\\baseapi\\repository\\itemrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1CC822DF-7C54-41FB-8B0F-10ECD0E6FF18}|BaseApi\\BaseApi.csproj|c:\\users\\aytug\\onedrive\\belgeler\\github\\.net-baseapi\\baseapi\\repository\\itemrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1CC822DF-7C54-41FB-8B0F-10ECD0E6FF18}|BaseApi\\BaseApi.csproj|solutionrelative:baseapi\\repository\\itemrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1CC822DF-7C54-41FB-8B0F-10ECD0E6FF18}|BaseApi\\BaseApi.csproj|c:\\users\\aytug\\source\\repos\\baseapi\\baseapi\\repository\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1CC822DF-7C54-41FB-8B0F-10ECD0E6FF18}|BaseApi\\BaseApi.csproj|solutionrelative:baseapi\\repository\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1CC822DF-7C54-41FB-8B0F-10ECD0E6FF18}|BaseApi\\BaseApi.csproj|c:\\users\\aytug\\onedrive\\belgeler\\github\\.net-baseapi\\baseapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CC822DF-7C54-41FB-8B0F-10ECD0E6FF18}|BaseApi\\BaseApi.csproj|solutionrelative:baseapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1CC822DF-7C54-41FB-8B0F-10ECD0E6FF18}|BaseApi\\BaseApi.csproj|c:\\users\\aytug\\source\\repos\\baseapi\\baseapi\\service\\postservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1CC822DF-7C54-41FB-8B0F-10ECD0E6FF18}|BaseApi\\BaseApi.csproj|solutionrelative:baseapi\\service\\postservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1CC822DF-7C54-41FB-8B0F-10ECD0E6FF18}|BaseApi\\BaseApi.csproj|c:\\users\\aytug\\source\\repos\\baseapi\\baseapi\\controllers\\itemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1CC822DF-7C54-41FB-8B0F-10ECD0E6FF18}|BaseApi\\BaseApi.csproj|c:\\users\\aytug\\onedrive\\belgeler\\github\\.net-baseapi\\baseapi\\controllers\\itemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1CC822DF-7C54-41FB-8B0F-10ECD0E6FF18}|BaseApi\\BaseApi.csproj|solutionrelative:baseapi\\controllers\\itemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1CC822DF-7C54-41FB-8B0F-10ECD0E6FF18}|BaseApi\\BaseApi.csproj|c:\\users\\aytug\\source\\repos\\baseapi\\baseapi\\repository\\postrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1CC822DF-7C54-41FB-8B0F-10ECD0E6FF18}|BaseApi\\BaseApi.csproj|solutionrelative:baseapi\\repository\\postrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1CC822DF-7C54-41FB-8B0F-10ECD0E6FF18}|BaseApi\\BaseApi.csproj|c:\\users\\aytug\\source\\repos\\baseapi\\baseapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1CC822DF-7C54-41FB-8B0F-10ECD0E6FF18}|BaseApi\\BaseApi.csproj|solutionrelative:baseapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1CC822DF-7C54-41FB-8B0F-10ECD0E6FF18}|BaseApi\\BaseApi.csproj|c:\\users\\aytug\\onedrive\\belgeler\\github\\.net-baseapi\\baseapi\\mongodb\\mongodbmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1CC822DF-7C54-41FB-8B0F-10ECD0E6FF18}|BaseApi\\BaseApi.csproj|solutionrelative:baseapi\\mongodb\\mongodbmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,110 +34,84 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "IRepository.cs",
-              "DocumentMoniker": "C:\\Users\\aytug\\source\\repos\\BaseApi\\BaseApi\\Repository\\IRepository.cs",
-              "RelativeDocumentMoniker": "BaseApi\\Repository\\IRepository.cs",
-              "ToolTip": "C:\\Users\\aytug\\source\\repos\\BaseApi\\BaseApi\\Repository\\IRepository.cs",
-              "RelativeToolTip": "BaseApi\\Repository\\IRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAjAAAA",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\aytug\\OneDrive\\Belgeler\\GitHub\\.net-BaseApi\\BaseApi\\Program.cs",
+              "RelativeDocumentMoniker": "BaseApi\\Program.cs",
+              "ToolTip": "C:\\Users\\aytug\\OneDrive\\Belgeler\\GitHub\\.net-BaseApi\\BaseApi\\Program.cs",
+              "RelativeToolTip": "BaseApi\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAA8AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-18T14:19:26.501Z",
+              "WhenOpened": "2024-03-18T15:59:46.761Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "ItemController.cs",
-              "DocumentMoniker": "C:\\Users\\aytug\\source\\repos\\BaseApi\\BaseApi\\Controllers\\ItemController.cs",
-              "RelativeDocumentMoniker": "BaseApi\\Controllers\\ItemController.cs",
-              "ToolTip": "C:\\Users\\aytug\\source\\repos\\BaseApi\\BaseApi\\Controllers\\ItemController.cs",
-              "RelativeToolTip": "BaseApi\\Controllers\\ItemController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Title": "MongoDBModel.cs",
+              "DocumentMoniker": "C:\\Users\\aytug\\OneDrive\\Belgeler\\GitHub\\.net-BaseApi\\BaseApi\\MongoDB\\MongoDBModel.cs",
+              "RelativeDocumentMoniker": "BaseApi\\MongoDB\\MongoDBModel.cs",
+              "ToolTip": "C:\\Users\\aytug\\OneDrive\\Belgeler\\GitHub\\.net-BaseApi\\BaseApi\\MongoDB\\MongoDBModel.cs",
+              "RelativeToolTip": "BaseApi\\MongoDB\\MongoDBModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAABLAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-18T13:53:42.358Z",
+              "WhenOpened": "2024-03-18T15:58:23.428Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "PostRepository.cs",
-              "DocumentMoniker": "C:\\Users\\aytug\\source\\repos\\BaseApi\\BaseApi\\Repository\\PostRepository.cs",
-              "RelativeDocumentMoniker": "BaseApi\\Repository\\PostRepository.cs",
-              "ToolTip": "C:\\Users\\aytug\\source\\repos\\BaseApi\\BaseApi\\Repository\\PostRepository.cs",
-              "RelativeToolTip": "BaseApi\\Repository\\PostRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentIndex": 4,
+              "Title": "ItemController.cs",
+              "DocumentMoniker": "C:\\Users\\aytug\\OneDrive\\Belgeler\\GitHub\\.net-BaseApi\\BaseApi\\Controllers\\ItemController.cs",
+              "RelativeDocumentMoniker": "BaseApi\\Controllers\\ItemController.cs",
+              "ToolTip": "C:\\Users\\aytug\\OneDrive\\Belgeler\\GitHub\\.net-BaseApi\\BaseApi\\Controllers\\ItemController.cs",
+              "RelativeToolTip": "BaseApi\\Controllers\\ItemController.cs",
+              "ViewState": "AQIAABoAAAAAAAAAAAAgwCsAAABBAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-18T13:53:39.471Z",
+              "WhenOpened": "2024-03-18T15:57:23.803Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "ItemRepository.cs",
-              "DocumentMoniker": "C:\\Users\\aytug\\source\\repos\\BaseApi\\BaseApi\\Repository\\ItemRepository.cs",
+              "DocumentMoniker": "C:\\Users\\aytug\\OneDrive\\Belgeler\\GitHub\\.net-BaseApi\\BaseApi\\Repository\\ItemRepository.cs",
               "RelativeDocumentMoniker": "BaseApi\\Repository\\ItemRepository.cs",
-              "ToolTip": "C:\\Users\\aytug\\source\\repos\\BaseApi\\BaseApi\\Repository\\ItemRepository.cs",
+              "ToolTip": "C:\\Users\\aytug\\OneDrive\\Belgeler\\GitHub\\.net-BaseApi\\BaseApi\\Repository\\ItemRepository.cs",
               "RelativeToolTip": "BaseApi\\Repository\\ItemRepository.cs",
-              "ViewState": "AQIAABIAAAAAAAAAAAAYwAAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACQAAAA0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-18T13:52:57.561Z",
+              "WhenOpened": "2024-03-18T15:57:20.809Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "UserService.cs",
-              "DocumentMoniker": "C:\\Users\\aytug\\source\\repos\\BaseApi\\BaseApi\\Service\\UserService.cs",
-              "RelativeDocumentMoniker": "BaseApi\\Service\\UserService.cs",
-              "ToolTip": "C:\\Users\\aytug\\source\\repos\\BaseApi\\BaseApi\\Service\\UserService.cs",
-              "RelativeToolTip": "BaseApi\\Service\\UserService.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAAwAAAAAAAAAAA",
+              "Title": "Post.cs",
+              "DocumentMoniker": "C:\\Users\\aytug\\OneDrive\\Belgeler\\GitHub\\.net-BaseApi\\BaseApi\\Models\\Post.cs",
+              "RelativeDocumentMoniker": "BaseApi\\Models\\Post.cs",
+              "ToolTip": "C:\\Users\\aytug\\OneDrive\\Belgeler\\GitHub\\.net-BaseApi\\BaseApi\\Models\\Post.cs",
+              "RelativeToolTip": "BaseApi\\Models\\Post.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-18T13:51:50.189Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "PostService.cs",
-              "DocumentMoniker": "C:\\Users\\aytug\\source\\repos\\BaseApi\\BaseApi\\Service\\PostService.cs",
-              "RelativeDocumentMoniker": "BaseApi\\Service\\PostService.cs",
-              "ToolTip": "C:\\Users\\aytug\\source\\repos\\BaseApi\\BaseApi\\Service\\PostService.cs",
-              "RelativeToolTip": "BaseApi\\Service\\PostService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAtAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-18T13:51:49.681Z",
+              "WhenOpened": "2024-03-18T15:56:52.413Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ItemService.cs",
-              "DocumentMoniker": "C:\\Users\\aytug\\source\\repos\\BaseApi\\BaseApi\\Service\\ItemService.cs",
-              "RelativeDocumentMoniker": "BaseApi\\Service\\ItemService.cs",
-              "ToolTip": "C:\\Users\\aytug\\source\\repos\\BaseApi\\BaseApi\\Service\\ItemService.cs",
-              "RelativeToolTip": "BaseApi\\Service\\ItemService.cs",
-              "ViewState": "AQIAABYAAAAAAAAAAAAYwB0AAAA2AAAA",
+              "Title": "Item.cs",
+              "DocumentMoniker": "C:\\Users\\aytug\\OneDrive\\Belgeler\\GitHub\\.net-BaseApi\\BaseApi\\Models\\Item.cs",
+              "RelativeDocumentMoniker": "BaseApi\\Models\\Item.cs",
+              "ToolTip": "C:\\Users\\aytug\\OneDrive\\Belgeler\\GitHub\\.net-BaseApi\\BaseApi\\Models\\Item.cs",
+              "RelativeToolTip": "BaseApi\\Models\\Item.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-18T13:51:49.207Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\aytug\\source\\repos\\BaseApi\\BaseApi\\Program.cs",
-              "RelativeDocumentMoniker": "BaseApi\\Program.cs",
-              "ToolTip": "C:\\Users\\aytug\\source\\repos\\BaseApi\\BaseApi\\Program.cs",
-              "RelativeToolTip": "BaseApi\\Program.cs",
-              "ViewState": "AQIAAAcAAAAAAAAAAAAUwBoAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-18T12:30:49.503Z",
+              "WhenOpened": "2024-03-18T15:56:33.227Z",
               "EditorCaption": ""
             }
           ]

@@ -1203,11 +1203,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\aytug\\source\\repos\\BaseApi\\BaseApi\\BaseApi.csproj",
+      "projectUniqueName": "C:\\Users\\aytug\\OneDrive\\Belgeler\\GitHub\\.net-BaseApi\\BaseApi\\BaseApi.csproj",
       "projectName": "BaseApi",
-      "projectPath": "C:\\Users\\aytug\\source\\repos\\BaseApi\\BaseApi\\BaseApi.csproj",
+      "projectPath": "C:\\Users\\aytug\\OneDrive\\Belgeler\\GitHub\\.net-BaseApi\\BaseApi\\BaseApi.csproj",
       "packagesPath": "C:\\Users\\aytug\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\aytug\\source\\repos\\BaseApi\\BaseApi\\obj\\",
+      "outputPath": "C:\\Users\\aytug\\OneDrive\\Belgeler\\GitHub\\.net-BaseApi\\BaseApi\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\aytug\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -1269,7 +1269,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.203/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
