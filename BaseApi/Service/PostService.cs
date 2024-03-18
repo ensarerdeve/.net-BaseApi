@@ -12,6 +12,7 @@ namespace BaseApi.Service
         }
         public async Task<Posts> Create(Posts newPost)
         {
+            newPost.Id = Guid.NewGuid();
             return await _postRepository.Create(newPost);
         }
 

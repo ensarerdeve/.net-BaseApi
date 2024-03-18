@@ -16,6 +16,7 @@ namespace BaseApi.MongoDB
 
         public IMongoCollection<Users> Users => _database.GetCollection<Users>("Users");
         public IMongoCollection<Posts> Posts => _database.GetCollection<Posts>("Posts");
+        public IMongoCollection<Items> Items => _database.GetCollection<Items>("Items");
 
     }
 }

@@ -27,6 +27,7 @@ namespace BaseApi.Repository
 
         public async Task<Users> Create(Users newUser)
         {
+            Guid id = Guid.NewGuid();
             await _collection.InsertOneAsync(newUser);
             return newUser;
         }

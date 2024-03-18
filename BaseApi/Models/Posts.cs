@@ -1,5 +1,8 @@
-﻿namespace BaseApi.Models
+﻿using System.ComponentModel.DataAnnotations.Schema;
+
+namespace BaseApi.Models
 {
+    [Table("Posts")]
     public class Posts
     {
         public Guid Id {  get; set; }

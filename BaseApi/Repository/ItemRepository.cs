@@ -4,33 +4,43 @@ using MongoDB.Driver;
 
 namespace BaseApi.Repository
 {
-    public class PostRepository : IRepository<Posts>
+    public class ItemRepository : IRepository<Items>
     {
         private readonly MongoDBModel _database;
-        private readonly IMongoCollection<Posts> _collection;
-        public PostRepository(MongoDBModel database)
+        private readonly IMongoCollection<Items> _collection;
+        public ItemRepository(MongoDBModel database)
         {
             _database = database;
-            _collection = _database.Posts;
+            _collection = _database.Items;
         }
-        public async Task<IEnumerable<Posts>> GetAll()
+
+
+        public async Task<IEnumerable<Items>> GetAll()
         {
             return await _collection.Find(_ => true).ToListAsync();
         }
-        public async Task<Posts> GetById(Guid id)
+
+
+        public async Task<Items> GetById(Guid id)
         {
             return await _collection.Find(p => p.Id == id).FirstOrDefaultAsync();
         }
-        public async Task<Posts> Create(Posts newPost)
+
+
+        public async Task<Items> Create(Items newItem)
         {
-            await _collection.InsertOneAsync(newPost);
-            return newPost;
+            await _collection.InsertOneAsync(newItem);
+            return newItem;
         }
-        public async Task<bool> Update(Guid id, Posts updatedPost)
+
+
+        public async Task<bool> Update(Guid id, Items updatedItems)
         {
-            var result = await _collection.ReplaceOneAsync(p => p.Id == id, updatedPost);
+            var result = await _collection.ReplaceOneAsync(p => p.Id == id, updatedItems);
             return result.ModifiedCount > 0;
         }
+
+
         public async Task<bool> Delete(Guid id)
         {
             var result = await _collection.DeleteOneAsync(p => p.Id == id);

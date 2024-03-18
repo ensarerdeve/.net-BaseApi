@@ -24,6 +24,7 @@ namespace BaseApi.Service
 
         public async Task <Users> Create(Users newUser)
         {
+            newUser.Id = Guid.NewGuid();
             return await _userRepository.Create(newUser);
         }
         public async Task <bool> Update(Guid id, Users updatedUser)

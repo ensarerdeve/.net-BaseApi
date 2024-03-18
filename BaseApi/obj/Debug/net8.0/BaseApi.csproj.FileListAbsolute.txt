@@ -43,3 +43,4 @@ C:\Users\aytug\source\repos\BaseApi\BaseApi\obj\Debug\net8.0\refint\BaseApi.dll
 C:\Users\aytug\source\repos\BaseApi\BaseApi\obj\Debug\net8.0\BaseApi.pdb
 C:\Users\aytug\source\repos\BaseApi\BaseApi\obj\Debug\net8.0\BaseApi.genruntimeconfig.cache
 C:\Users\aytug\source\repos\BaseApi\BaseApi\obj\Debug\net8.0\ref\BaseApi.dll
+C:\Users\aytug\source\repos\BaseApi\BaseApi\obj\Debug\net8.0\BaseApi.sourcelink.json

@@ -14,10 +14,12 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.Configure<MongoDBSettings>(builder.Configuration.GetSection("UserDB"));
-builder.Services.AddScoped<IRepository<Users>, UserRepository>();
 builder.Services.AddScoped<MongoDBModel>();
-builder.Services.AddScoped<UserService>();
+builder.Services.AddScoped<IRepository<Users>, UserRepository>();
 builder.Services.AddScoped<IRepository<Posts>, PostRepository>();
+builder.Services.AddScoped<IRepository<Items>, ItemRepository>();
+builder.Services.AddScoped<UserService>();
+builder.Services.AddScoped<ItemService>();
 builder.Services.AddScoped<PostService>();
 
 
