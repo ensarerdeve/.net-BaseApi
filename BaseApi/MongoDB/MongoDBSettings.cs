@@ -1,9 +1,14 @@
-﻿namespace BaseApi.MongoDB
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace BaseApi.MongoDB
 {
     public class MongoDBSettings
     {
-        public string ConnectionString { get; set; } = null!;
-        public string DatabaseName { get; set; } = null!;
-        public string UsersCollectionName { get; set; } = null!;
+        [Required]
+        public string ConnectionString { get; set; }
+        [Required]
+        public string DatabaseName { get; set; }
+        [Required]
+        public string UsersCollectionName { get; set; }
     }
 }

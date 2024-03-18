@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace BaseApi.Models
 {
@@ -6,9 +7,13 @@ namespace BaseApi.Models
     public class User
     {
         public Guid Id { get; set; }
-        public string Name { get; set; } = null!;
+        [Required]
+        public string Name { get; set; }
+        [Required]
         public string Email { get; set; }
+        [Required]
         public string Phone { get; set; }
+        [Required]
         public decimal Age { get; set; }
     }
 }
