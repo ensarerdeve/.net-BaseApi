@@ -1,13 +1,14 @@
 ﻿using BaseApi.Models;
 using BaseApi.Repositories;
+using System.Text.RegularExpressions;
 
 namespace BaseApi.Service
 {
-    public class UserService : IUserRepository
+    public class UserService
     {
-        private readonly IUserRepository _userRepository;
+        private readonly UserRepository _userRepository;
 
-        public UserService(IUserRepository userRepository)
+        public UserService(UserRepository userRepository)
         {
             _userRepository = userRepository;
         }
@@ -54,9 +55,9 @@ namespace BaseApi.Service
             }
         }
 
-        public async Task<User> GetByName(string username)
+        public async Task<IEnumerable<User>> GetByName(string name)
         {
-            var userControl = await _userRepository.GetByName(username);
+            var userControl = await _userRepository.GetByName(name);
             if (userControl != null)
             {
                 return userControl;
@@ -65,6 +66,19 @@ namespace BaseApi.Service
             else
             {
                 throw new KeyNotFoundException("Böyle bir kullanıcı yok.");
+            }
+        }
+
+        public async Task<User> GetByUsername(string username)
+        {
+            var userControl = await _userRepository.GetByUsername(username);
+            if (userControl != null)
+            {
+                return userControl;
+            }
+            else
+            {
+                throw new KeyNotFoundException("Kullanıcı bulunamadı.");
             }
         }
     }

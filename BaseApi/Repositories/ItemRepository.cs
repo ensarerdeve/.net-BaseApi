@@ -1,63 +1,35 @@
 ﻿using BaseApi.Models;
 using BaseApi.MongoDB;
-using BaseApi.Repositories;
+using BaseApi.Repository;
 using MongoDB.Driver;
+using System.Collections;
 
-namespace BaseApi.Repository
+namespace BaseApi.Repositories
 {
-    public class ItemRepository : IItemRepository
+    public class ItemRepository : Repository<Item>, IItemRepository
     {
-        private readonly MongoDBModel _database;
-        private readonly IMongoCollection<Item> _collection;
-        public ItemRepository(MongoDBModel database)
+        protected MongoDBModel _database;
+
+        public IMongoCollection<Item> _collection { get; set; }
+
+        public ItemRepository(MongoDBModel database) : base(database)
         {
-            _database = database;
-            _collection = _database.Items;
+            base._database = database;
         }
 
-
-        public async Task<IEnumerable<Item>> GetAll()
+        public async Task<IEnumerable<Item>> GetByUserName(string username)
         {
-            return await _collection.Find(_ => true).ToListAsync();
+            return await _collection.Find(user => user.itemOwner == username).ToListAsync();
         }
 
-
-        public async Task<Item> GetById(Guid id)
+        public async Task<IEnumerable<Item>> GetByItemName(string itemName)
         {
-            return await _collection.Find(p => p.Id == id).FirstOrDefaultAsync();
+            return await _collection.Find(item => item.itemName == itemName).ToListAsync();
+        }
+        public async Task<IEnumerable<Item>> GetByPrice(string price)
+        {
+            return await _collection.Find(item => item.itemPrice == price).ToListAsync();
         }
 
-
-        public async Task<Item> Create(Item newItem)
-        {
-            await _collection.InsertOneAsync(newItem);
-            return newItem;
-        }
-
-
-        public async Task<bool> Update(Guid id, Item updatedItems)
-        {
-            var result = await _collection.ReplaceOneAsync(p => p.Id == id, updatedItems);
-            return result.ModifiedCount > 0;
-        }
-
-
-        public async Task<bool> Delete(Guid id)
-        {
-            var result = await _collection.DeleteOneAsync(p => p.Id == id);
-            return result.DeletedCount > 0;
-        }
-
-        public async Task<Item> GetByPrice(string price)
-        {
-            var result = await _collection.Find(item => item.itemPrice == price).FirstOrDefaultAsync();
-            return result;
-        }
-
-        public async Task<Item> GetByItemName(string itemName)
-        {
-            var res = await _collection.Find(item => item.itemName == itemName).FirstOrDefaultAsync();
-            return res;
-        }
     }
 }

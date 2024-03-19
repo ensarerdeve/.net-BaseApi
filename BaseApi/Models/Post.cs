@@ -3,7 +3,7 @@
 namespace BaseApi.Models
 {
     [Table("Posts")]
-    public class Post
+    public class Post : IModel
     {
         public Guid Id {  get; set; }
         public string content { get; set; }

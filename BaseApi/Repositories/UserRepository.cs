@@ -1,53 +1,29 @@
 ﻿using BaseApi.Models;
 using BaseApi.MongoDB;
-using BaseApi.Repositories;
 using MongoDB.Driver;
 
-namespace BaseApi.Repository
+namespace BaseApi.Repositories
 {
-    public class UserRepository : IUserRepository
+    public class UserRepository : Repository<User>, IUserRepository
     {
-        private readonly MongoDBModel _database;
-        private readonly IMongoCollection<User> _collection;
+        protected MongoDBModel _database;
 
-        public UserRepository(MongoDBModel database)
+        public IMongoCollection<User> _collection { get; set; }
+
+        public UserRepository(MongoDBModel database) : base(database)
         {
-            _database = database;
-            _collection = _database.Users;
+            base._database = database;
         }
 
-        public async Task<IEnumerable<User>> GetAll()
+        public async Task<User> GetByUsername(string username)
         {
-            return await _collection.Find(_ => true).ToListAsync();
+            return await _collection.Find(user => user.Username == username).FirstOrDefaultAsync();
         }
 
-        public async Task<User> GetById(Guid id)
+        public async Task<IEnumerable<User>> GetByName(string name)
         {
-            return await _collection.Find(p => p.Id == id).FirstOrDefaultAsync();
-        }
-
-        public async Task<User> GetByName(string username)
-        {
-            return await _collection.Find(user => user.Name == username).FirstOrDefaultAsync();
-        }
-
-        public async Task<User> Create(User newUser)
-        {
-            newUser.Id = Guid.NewGuid();
-            await _collection.InsertOneAsync(newUser);
-            return newUser;
-        }
-
-        public async Task<bool> Update(Guid id, User updatedUser)
-        {
-            var result = await _collection.ReplaceOneAsync(p => p.Id == id, updatedUser);
-            return result.ModifiedCount > 0;
-        }
-
-        public async Task<bool> Delete(Guid id)
-        {
-            var result = await _collection.DeleteOneAsync(p => p.Id == id);
-            return result.DeletedCount > 0;
+            return await _collection.Find(user => user.Name == name).ToListAsync();
         }
     }
 }
+

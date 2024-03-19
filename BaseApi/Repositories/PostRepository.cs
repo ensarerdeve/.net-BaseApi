@@ -5,42 +5,21 @@ using MongoDB.Driver;
 
 namespace BaseApi.Repository
 {
-    public class PostRepository : IPostRepository
+    public class PostRepository : Repository<Post>, IPostRepository
     {
-        private readonly MongoDBModel _database;
-        private readonly IMongoCollection<Post> _collection;
-        public PostRepository(MongoDBModel database)
-        {
-            _database = database;
-            _collection = _database.Posts;
-        }
-        public async Task<IEnumerable<Post>> GetAll()
-        {
-            return await _collection.Find(_ => true).ToListAsync();
-        }
-        public async Task<Post> GetById(Guid id)
-        {
-            return await _collection.Find(p => p.Id == id).FirstOrDefaultAsync();
-        }
-        public async Task<Post> Create(Post newPost)
-        {
-            await _collection.InsertOneAsync(newPost);
-            return newPost;
-        }
-        public async Task<bool> Update(Guid id, Post updatedPost)
-        {
-            var result = await _collection.ReplaceOneAsync(p => p.Id == id, updatedPost);
-            return result.ModifiedCount > 0;
-        }
-        public async Task<bool> Delete(Guid id)
-        {
-            var result = await _collection.DeleteOneAsync(p => p.Id == id);
-            return result.DeletedCount > 0;
-        }
+        protected MongoDBModel _database;
 
-        public async Task<Post> GetByName(string username)
+        public IMongoCollection<Post> _collection { get; set; }
+
+        public PostRepository(MongoDBModel database) : base(database)
         {
-            return await _collection.Find(user => user.userName == username).FirstOrDefaultAsync();
+            base._database = database;
+        }
+ 
+
+        public async Task<IEnumerable<Post>> GetByUserName(string username)
+        {
+            return await _collection.Find(user => user.userName == username).ToListAsync();
         }
     }
 }

@@ -1,6 +1,7 @@
 ﻿using BaseApi.Models;
 using BaseApi.Service;
 using Microsoft.AspNetCore.Mvc;
+using System.Text.RegularExpressions;
 
 namespace BaseApi.Controllers
 {
@@ -33,10 +34,21 @@ namespace BaseApi.Controllers
             return Ok(user);
         }
 
-        [HttpGet("/name/{username}")]
+        [HttpGet("/username/{username}")]
         public async Task<ActionResult<User>> GetUserByUsername(string username)
         {
-            var user = await userService.GetByName(username);
+            var user = await userService.GetByUsername(username);
+            if (user == null)
+            {
+                return NotFound();
+            }
+            return Ok(user);
+        }
+
+        [HttpGet("/name/{name}")]
+        public async Task<ActionResult<User>> GetUserByName(string name)
+        {
+            var user = await userService.GetByName(name);
             if (user == null)
             {
                 return NotFound();
@@ -47,8 +59,16 @@ namespace BaseApi.Controllers
         [HttpPost]
         public async Task<IActionResult> CreateUser(User newUser)
         {
-            await userService.Create(newUser);
-            return Ok(newUser);
+            var isValid = IsValid(newUser.Email);
+            if(await isValid)
+            {
+                await userService.Create(newUser);
+                return Ok(newUser);
+            }
+            else
+            {
+                return BadRequest();
+            }
         }
 
         [HttpPut("{id}")]
@@ -63,6 +83,13 @@ namespace BaseApi.Controllers
         {
             await userService.Delete(id);
             return Ok();
+        }
+
+        public async Task<bool> IsValid(string email)
+        {
+            string regex = @"^[^@\s]+@[^@\s]+\.(com|net|org|gov)$";
+
+            return Regex.IsMatch(email, regex, RegexOptions.IgnoreCase);
         }
     }
 }

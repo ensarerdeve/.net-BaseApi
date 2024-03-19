@@ -99,15 +99,41 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "BaseApi.Controllers.UserController",
-    "Method": "GetUserByUsername",
-    "RelativePath": "name/{username}",
+    "ContainingType": "BaseApi.Controllers.ItemController",
+    "Method": "GetItemsByItemName",
+    "RelativePath": "itemName/{itemName}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "username",
+        "Name": "itemName",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "BaseApi.Models.Item",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "BaseApi.Controllers.UserController",
+    "Method": "GetUserByName",
+    "RelativePath": "name/{name}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "name",
         "Type": "System.String",
         "IsRequired": true
       }
@@ -224,6 +250,48 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "BaseApi.Controllers.PostController",
+    "Method": "GetUserPostsByUsername",
+    "RelativePath": "post/user/{username}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "username",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BaseApi.Controllers.ItemController",
+    "Method": "GetItemsByPrice",
+    "RelativePath": "price/{price}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "price",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "BaseApi.Models.Item",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "BaseApi.Controllers.UserController",
     "Method": "GetUsers",
     "RelativePath": "User",
@@ -321,5 +389,31 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BaseApi.Controllers.UserController",
+    "Method": "GetUserByUsername",
+    "RelativePath": "username/{username}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "username",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "BaseApi.Models.User",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   }
 ]

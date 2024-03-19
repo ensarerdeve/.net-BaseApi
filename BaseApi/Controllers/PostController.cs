@@ -31,10 +31,10 @@ namespace BaseApi.Controllers
             return Ok(post);
         }
 
-        [HttpGet("/user/{username}")]
+        [HttpGet("/post/user/{username}")]
         public async Task <ActionResult> GetUserPostsByUsername(string username)
         {
-            var posts = await postService.GetByName(username);
+            var posts = await postService.GetByUserName(username);
             if (posts == null)
             {
                 return NotFound();

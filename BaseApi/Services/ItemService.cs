@@ -1,48 +1,88 @@
 ﻿using BaseApi.Models;
 using BaseApi.Repositories;
-using BaseApi.Repository;
 
 namespace BaseApi.Service
 {
-    public class ItemService : IItemRepository
+    public class ItemService
     {
-        private readonly IItemRepository _repository;
+        private readonly ItemRepository _repository;
+        private readonly UserRepository _userRepository;
 
-        public ItemService(IItemRepository repository)
+        public ItemService(ItemRepository repository, UserRepository userRepository)
         {
             _repository = repository;
+            _userRepository = userRepository;
         }
 
         public async Task<Item> Create(Item newItem)
         {
             newItem.Id = Guid.NewGuid();
+            var user = await _userRepository.GetByUsername(newItem.itemOwner);
+            if (newItem.itemOwner == user.Username)
+            {
             return await _repository.Create(newItem);
+            }
+            else
+            {
+                throw new KeyNotFoundException("Ürün oluşturulamaz");
+            }
         }
 
         public async Task<bool> Delete(Guid id)
         {
+            var itemCheck = await _repository.GetById(id);
+            if (itemCheck == null)
+            {
+                throw new KeyNotFoundException("Ürün bulunamadı.");
+            }
             return await _repository.Delete(id);
         }
 
 
         public async Task<IEnumerable<Item>> GetAll()
         {
-            return await _repository.GetAll();
+            var item = await _repository.GetAll();
+            return item.OrderBy(u => u.itemName);
         }
 
         public async Task<Item> GetById(Guid id)
         {
-            return await _repository.GetById(id);
+            var item = await _repository.GetById(id);
+            if (item != null)
+            {
+                return item;
+
+            }
+            else
+            {
+                throw new KeyNotFoundException("Böyle bir ürün yok.");
+            }
         }
 
-        public async Task<Item> GetByItemName(string itemName)
+        public async Task<IEnumerable<Item>> GetByItemName(string itemName)
         {
-            return await _repository.GetByItemName(itemName);
+            var item = await _repository.GetByItemName(itemName);
+            if (item != null)
+            {
+                return item;
+            }
+            else
+            {
+                throw new KeyNotFoundException($"{itemName} adlı ürün bulunamadı.");
+            }
         }
 
-        public async Task<Item> GetByPrice(string price)
+        public async Task<IEnumerable<Item>> GetByPrice(string price)
         {
-            return await _repository.GetByPrice(price);
+            var items = await _repository.GetByPrice(price);
+            if (items != null)
+            {
+                return items;
+            }
+            else
+            {
+                throw new KeyNotFoundException("Belirtilen fiyatta ürünler bulunamadı");
+            }
         }
 
         public async Task<bool> Update(Guid id, Item updatedItem)
