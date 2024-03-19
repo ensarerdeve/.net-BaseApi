@@ -95,6 +95,12 @@ StyleCopReport.xml
 *.tmp
 *.tmp_proj
 *_wpftmp.csproj
+*.suo
+*.user
+_ReSharper.*
+bin
+obj
+packages
 *.log
 *.tlog
 *.vspscc

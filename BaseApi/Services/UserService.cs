@@ -1,6 +1,5 @@
 ﻿using BaseApi.Models;
 using BaseApi.Repositories;
-using BaseApi.Repository;
 
 namespace BaseApi.Service
 {
@@ -15,12 +14,21 @@ namespace BaseApi.Service
 
         public async Task<IEnumerable<User>> GetAll()
         {
-            return await _userRepository.GetAll();
+            var users = await _userRepository.GetAll();
+            return users.OrderBy(u => u.Name);
         }
 
         public async Task<User> GetById(Guid id)
         {
-            return await _userRepository.GetById(id);
+            var user = await _userRepository.GetById(id);
+            if (user != null)
+            {
+                return user;
+            }
+            else
+            {
+                throw new KeyNotFoundException("Böyle bir kullanıcı yok.");
+            }
         }
 
         public async Task <User> Create(User newUser)
@@ -34,12 +42,30 @@ namespace BaseApi.Service
         }
         public async Task<bool> Delete(Guid id)
         {
-           return await _userRepository.Delete(id);
+            var userControl = await _userRepository.GetById(id);
+            if (userControl != null)
+            {
+                return await _userRepository.Delete(id);
+
+            }
+            else
+            {
+                throw new KeyNotFoundException("Böyle bir user zaten yok.");
+            }
         }
 
-        public Task<User> GetByName(string username)
+        public async Task<User> GetByName(string username)
         {
-            return _userRepository.GetByName(username);
+            var userControl = await _userRepository.GetByName(username);
+            if (userControl != null)
+            {
+                return userControl;
+
+            }
+            else
+            {
+                throw new KeyNotFoundException("Böyle bir kullanıcı yok.");
+            }
         }
     }
 }

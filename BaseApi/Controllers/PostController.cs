@@ -31,6 +31,17 @@ namespace BaseApi.Controllers
             return Ok(post);
         }
 
+        [HttpGet("/user/{username}")]
+        public async Task <ActionResult> GetUserPostsByUsername(string username)
+        {
+            var posts = await postService.GetByName(username);
+            if (posts == null)
+            {
+                return NotFound();
+            }
+                return Ok(posts);
+        }
+
         [HttpPost]
         public async Task<IActionResult> CreatePost(Post newPost)
         {

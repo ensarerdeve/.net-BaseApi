@@ -1,12 +1,13 @@
 ﻿using BaseApi.Models;
+using BaseApi.Repositories;
 using BaseApi.Repository;
 
 namespace BaseApi.Service
 {
-    public class PostService : IRepository<Post>
+    public class PostService : IPostRepository
     {
-        private readonly IRepository<Post> _postRepository;
-        public PostService(IRepository<Post> postRepository) 
+        private readonly IPostRepository _postRepository;
+        public PostService(IPostRepository postRepository) 
         {
             _postRepository = postRepository;
         }
@@ -29,6 +30,11 @@ namespace BaseApi.Service
         public async Task<Post> GetById(Guid id)
         {
             return await _postRepository.GetById(id);
+        }
+
+        public Task<Post> GetByName(string username)
+        {
+            return _postRepository.GetByName(username);
         }
 
         public async Task<bool> Update(Guid id, Post updatedPost)

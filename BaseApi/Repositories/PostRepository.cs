@@ -1,10 +1,11 @@
 ﻿using BaseApi.Models;
 using BaseApi.MongoDB;
+using BaseApi.Repositories;
 using MongoDB.Driver;
 
 namespace BaseApi.Repository
 {
-    public class PostRepository : IRepository<Post>
+    public class PostRepository : IPostRepository
     {
         private readonly MongoDBModel _database;
         private readonly IMongoCollection<Post> _collection;
@@ -35,6 +36,11 @@ namespace BaseApi.Repository
         {
             var result = await _collection.DeleteOneAsync(p => p.Id == id);
             return result.DeletedCount > 0;
+        }
+
+        public async Task<Post> GetByName(string username)
+        {
+            return await _collection.Find(user => user.userName == username).FirstOrDefaultAsync();
         }
     }
 }
