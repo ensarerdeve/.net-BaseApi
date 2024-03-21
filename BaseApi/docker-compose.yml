@@ -1,6 +1,16 @@
 ﻿version: '3.8'
 
 services:
+  mysql:
+    image: mysql:8.0
+    environment:
+      MYSQL_ROOT_PASSWORD: ensar1234
+      MYSQL_DATABASE: EnsarDB
+    ports:
+      - "3307:3306"
+    volumes:
+      - mysqldata:/var/lib/mysql
+
   mongodb:
     image: mongo:7.0
     environment:
@@ -9,7 +19,7 @@ services:
     ports:
       - "27017:27017"
     volumes:
-      - mongodata:/data/db
+      - mongodata:/data/db 
 
   myapi:
     build: .

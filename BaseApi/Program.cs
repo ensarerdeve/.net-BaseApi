@@ -2,6 +2,8 @@ using BaseApi.MongoDB;
 using BaseApi.Service;
 using BaseApi.Repository;
 using BaseApi.Repositories;
+using BaseApi.Services;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -13,9 +15,11 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.Configure<MongoDBSettings>(builder.Configuration.GetSection("UserDB"));
 builder.Services.AddScoped<MongoDBModel>();
+builder.Services.AddScoped<FollowRepository>();
 builder.Services.AddScoped<UserRepository>();
 builder.Services.AddScoped<PostRepository>();
 builder.Services.AddScoped<ItemRepository>();
+builder.Services.AddScoped<FollowService>();
 builder.Services.AddScoped<UserService>();
 builder.Services.AddScoped<ItemService>();
 builder.Services.AddScoped<PostService>();
