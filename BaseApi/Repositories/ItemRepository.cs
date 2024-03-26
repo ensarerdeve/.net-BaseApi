@@ -15,6 +15,7 @@ namespace BaseApi.Repositories
         public ItemRepository(MongoDBModel database) : base(database)
         {
             base._database = database;
+            _collection = database.GetCollection<Item>();
         }
 
         public async Task<IEnumerable<Item>> GetByUserName(string username)

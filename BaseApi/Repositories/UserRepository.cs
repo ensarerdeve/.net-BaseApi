@@ -13,6 +13,7 @@ namespace BaseApi.Repositories
         public UserRepository(MongoDBModel database) : base(database)
         {
             base._database = database;
+            _collection = database.GetCollection<User>();
         }
 
         public async Task<User> GetByUsername(string username)

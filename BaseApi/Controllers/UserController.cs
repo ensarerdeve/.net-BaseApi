@@ -1,7 +1,6 @@
 ﻿using BaseApi.Models;
 using BaseApi.Service;
 using Microsoft.AspNetCore.Mvc;
-using System.Text.RegularExpressions;
 
 namespace BaseApi.Controllers
 {
@@ -59,7 +58,7 @@ namespace BaseApi.Controllers
         [HttpPost]
         public async Task<IActionResult> CreateUser(User newUser)
         {
-            var isValid = IsValid(newUser.Email);
+            var isValid = userService.IsValid(newUser.Email);
             if(await isValid)
             {
                 await userService.Create(newUser);
@@ -83,13 +82,6 @@ namespace BaseApi.Controllers
         {
             await userService.Delete(id);
             return Ok();
-        }
-
-        public async Task<bool> IsValid(string email)
-        {
-            string regex = @"^[^@\s]+@[^@\s]+\.(com|net|org|gov)$";
-
-            return Regex.IsMatch(email, regex, RegexOptions.IgnoreCase);
         }
     }
 }

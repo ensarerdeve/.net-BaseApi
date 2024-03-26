@@ -10,5 +10,7 @@ namespace BaseApi.Models
         public int id { get; set; }
         [Required]
         public string followedUsername { get; set; }
+        [Required]
+        public string user { get; set;}
     }
 }

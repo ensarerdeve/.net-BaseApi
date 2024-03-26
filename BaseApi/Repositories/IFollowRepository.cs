@@ -4,11 +4,11 @@ namespace BaseApi.Repositories
 {
     public interface IFollowRepository
     {
-        IEnumerable<Follow> GetAllFollows();
-        Follow GetFollowById(int id);
-        Follow CreateFollow(Follow newFollow);
-        bool UpdateFollow(int id, Follow updatedFollow);
-        bool DeleteFollow(int id);
+        Task<IEnumerable<Follow>> GetAllFollows();
+        Task<Follow> GetFollowById(int id);
+        Task<Follow> CreateFollow(Follow newFollow);
+        Task<bool> UpdateFollow(int id, Follow updatedFollow);
+        Task<bool> DeleteFollow(int id);
 
     }
 }

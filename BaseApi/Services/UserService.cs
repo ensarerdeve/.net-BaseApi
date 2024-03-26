@@ -37,6 +37,12 @@ namespace BaseApi.Service
             newUser.Id = Guid.NewGuid();
             return await _userRepository.Create(newUser);
         }
+        public async Task<bool> IsValid(string email)
+        {
+            string regex = @"^[^@\s]+@[^@\s]+\.(com|net|org|gov)$";
+
+            return Regex.IsMatch(email, regex, RegexOptions.IgnoreCase);
+        }
         public async Task <bool> Update(Guid id, User updatedUser)
         {
             return await _userRepository.Update(id, updatedUser);

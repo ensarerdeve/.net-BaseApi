@@ -14,6 +14,7 @@ namespace BaseApi.Repository
         public PostRepository(MongoDBModel database) : base(database)
         {
             base._database = database;
+            _collection = database.GetCollection<Post>();
         }
  
 

@@ -1,7 +1,7 @@
 [
   {
     "ContainingType": "BaseApi.Controllers.FollowController",
-    "Method": "Get",
+    "Method": "GetAllFollows",
     "RelativePath": "Follow",
     "HttpMethod": "GET",
     "IsController": true,
@@ -18,6 +18,85 @@
         "StatusCode": 200
       }
     ]
+  },
+  {
+    "ContainingType": "BaseApi.Controllers.FollowController",
+    "Method": "CreateFollow",
+    "RelativePath": "Follow",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "newFollow",
+        "Type": "BaseApi.Models.Follow",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BaseApi.Controllers.FollowController",
+    "Method": "GetFollowById",
+    "RelativePath": "Follow/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "BaseApi.Models.Follow",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "BaseApi.Controllers.FollowController",
+    "Method": "UpdateFollow",
+    "RelativePath": "Follow/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "updatedFollow",
+        "Type": "BaseApi.Models.Follow",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BaseApi.Controllers.FollowController",
+    "Method": "Delete",
+    "RelativePath": "Follow/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   },
   {
     "ContainingType": "BaseApi.Controllers.ItemController",
@@ -346,32 +425,6 @@
       }
     ],
     "ReturnTypes": []
-  },
-  {
-    "ContainingType": "BaseApi.Controllers.UserController",
-    "Method": "IsValid",
-    "RelativePath": "User",
-    "HttpMethod": "",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "email",
-        "Type": "System.String",
-        "IsRequired": false
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "System.Boolean",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
   },
   {
     "ContainingType": "BaseApi.Controllers.UserController",

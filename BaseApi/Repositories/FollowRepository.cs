@@ -1,5 +1,5 @@
 ﻿using BaseApi.Models;
-using System.Data.SqlClient;
+using MySqlConnector;
 
 namespace BaseApi.Repositories
 {
@@ -12,23 +12,24 @@ namespace BaseApi.Repositories
             _configuration = configuration;
             _connectionString = _configuration.GetConnectionString("MyConn");
         }
-        public Follow CreateFollow(Follow newFollow)
+        public async Task<Follow> CreateFollow(Follow newFollow)
         {
-            using(var conn = new SqlConnection(_connectionString))
+            using(var conn = new MySqlConnection(_connectionString))
             using(var cmd = conn.CreateCommand())
             {
                 conn.Open();
-                cmd.CommandText = "INSERT INTO Follow(id, followedUsername) VALUES(@id, @followedUsername)";
+                cmd.CommandText = "INSERT INTO Follow(id, followedUsername, user) VALUES(@id, @followedUsername, @user)";
                 cmd.Parameters.AddWithValue("id", newFollow.id);
                 cmd.Parameters.AddWithValue("followedUsername", newFollow.followedUsername);
+                cmd.Parameters.AddWithValue("user", newFollow.user);
                 cmd.ExecuteNonQuery();
                 return newFollow;
             }
         }
 
-        public bool DeleteFollow(int id)
+        public async Task<bool> DeleteFollow(int id)
         {
-            using (var conn = new SqlConnection(_connectionString))
+            using (var conn = new MySqlConnection(_connectionString))
             using (var cmd = conn.CreateCommand())
             {
                 conn.Open();
@@ -39,9 +40,9 @@ namespace BaseApi.Repositories
             }
         }
 
-        public IEnumerable<Follow> GetAllFollows()
+        public async Task<IEnumerable<Follow>> GetAllFollows()
         {
-            using (var conn = new SqlConnection(_connectionString))
+            using (var conn = new MySqlConnection(_connectionString))
             using (var cmd = conn.CreateCommand())
             {
                 conn.Open();
@@ -52,20 +53,26 @@ namespace BaseApi.Repositories
                 {
                     while (reader.Read())
                     {
-                        follows.Add(new Follow());
+                        var follow = new Follow
+                        {
+                            id = reader.GetInt32(0),
+                            followedUsername = reader.GetString(1),
+                            user = reader.GetString(2)
+                        };
+                        follows.Add(follow);
                     }
                 }
-                return follows;
+                return follows;                
             }
         }
 
-        public Follow GetFollowById(int id)
+        public async Task<Follow> GetFollowById(int id)
         {
-            using(var conn = new SqlConnection(_connectionString))
+            using(var conn = new MySqlConnection(_connectionString))
             using(var cmd = conn.CreateCommand())
             {
                 conn.Open();
-                cmd.CommandText = "SELECT id, followedUsername FROM Follow WHERE id = @id";
+                cmd.CommandText = "SELECT id, followedUsername, user FROM Follow WHERE id = @id";
                 cmd.Parameters.AddWithValue("@id", id);
                 using (var reader = cmd.ExecuteReader())
                 {
@@ -75,22 +82,24 @@ namespace BaseApi.Repositories
                     }
                     return new Follow
                     {
-                        id = reader.GetInt32(reader.GetOrdinal("id")),
-                        followedUsername = reader.GetString(reader.GetOrdinal("username"))
+                        id = reader.GetInt32(0),
+                        followedUsername = reader.GetString(1),
+                        user = reader.GetString(2)
                     };
                 }
             }
         }
 
-        public bool UpdateFollow(int id, Follow updatedFollow)
+        public async Task<bool> UpdateFollow(int id, Follow updatedFollow)
         {
-            using (var conn = new SqlConnection(_connectionString))
+            using (var conn = new MySqlConnection(_connectionString))
             using (var cmd = conn.CreateCommand())
             {
                 conn.Open();
-                cmd.CommandText = "UPDATE Follow SET followedUsername = @followedUsername WHERE id = @id";
+                cmd.CommandText = "UPDATE Follow SET followedUsername = @followedUsername, user = @user WHERE id = @id";
                 cmd.Parameters.AddWithValue("@id", id);
-                cmd.Parameters.AddWithValue("@newFollowerName", updatedFollow.followedUsername);
+                cmd.Parameters.AddWithValue("@followedUsername", updatedFollow.followedUsername);
+                cmd.Parameters.AddWithValue("@user", updatedFollow.user);
                 int rowsAffected = cmd.ExecuteNonQuery();
                 return rowsAffected > 0;
             }
