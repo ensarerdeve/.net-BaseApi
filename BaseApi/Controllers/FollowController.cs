@@ -23,13 +23,13 @@ namespace BaseApi.Controllers
         [HttpGet("{id}")]
         public async Task<ActionResult<Follow>> GetFollowById(int id) 
         {
-            var follow = _followService.GetFollowById(id);
+            var follow = await _followService.GetFollowById(id);
             return Ok(follow);
         }
         [HttpPost]
         public async Task<ActionResult> CreateFollow(Follow newFollow)
         {
-            await _followService.CreateFollow(newFollow);
+            var follow = await _followService.CreateFollow(newFollow);
             return Ok(newFollow);
         }
         [HttpPut("{id}")]
