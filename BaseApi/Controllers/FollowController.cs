@@ -35,7 +35,7 @@ namespace BaseApi.Controllers
         [HttpPut("{id}")]
         public async Task<IActionResult> UpdateFollow(int id ,Follow updatedFollow)
         {
-            await _followService.UpdateFollow(id, updatedFollow);
+            var follow = await _followService.UpdateFollow(id, updatedFollow);
             return Ok();
         }
         [HttpDelete("{id}")]
