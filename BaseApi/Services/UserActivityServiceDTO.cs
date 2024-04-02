@@ -101,13 +101,12 @@ namespace BaseApi.Services
 
         public async Task<bool> ValidateMonthlyReport(int monthNumber)
         {
-            if (File.Exists(_directoryPath + $"{monthNumber}_report.json"))
+            if (File.Exists(_directoryPath + $"\\{monthNumber}_report.json"))
             {
                 return true;
             }
             else
-            {
-                await CreateMonthlyReport(monthNumber);
+            {              
                 return false;
             }
         }
