@@ -21,7 +21,7 @@ namespace BaseApi.Repositories
             using (var cmd = conn.CreateCommand())
             {
                 conn.Open();
-                cmd.CommandText = "SELECT userId, Id, Username, Timestamp, Action, Details FROM UserActivity where userId = @userId AND Timestamp >= DATE_SUB(NOW(), INTERVAL 30 DAY)";
+                cmd.CommandText = "SELECT userId, Id, Username, Timestamp, Action, Details FROM UserActivity where userId = @userId AND Timestamp >= (SELECT MAX(Timestamp) FROM UserActivity) - INTERVAL 30 DAY";
                 cmd.Parameters.AddWithValue("@userId", userId);
 
                 var userActivities = new List<UserActivity>();
@@ -60,7 +60,7 @@ namespace BaseApi.Repositories
             using (var cmd = conn.CreateCommand())
             {
                 conn.Open();
-                cmd.CommandText = "SELECT userId, Id, Username, Timestamp, Action, Details FROM UserActivity WHERE Timestamp >= DATE_SUB(NOW(), INTERVAL 30 DAY)";
+                cmd.CommandText = "SELECT userId, Id, Username, Timestamp, Action, Details FROM UserActivity";
                 var userActivities = new List<UserActivity>();
 
                 using (var reader = cmd.ExecuteReader())

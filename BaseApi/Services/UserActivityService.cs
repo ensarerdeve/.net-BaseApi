@@ -1,4 +1,5 @@
-﻿using BaseApi.Repositories;
+﻿using BaseApi.Models;
+using BaseApi.Repositories;
 using Action = BaseApi.Models.Action;
 
 namespace BaseApi.Services
@@ -8,6 +9,7 @@ namespace BaseApi.Services
         public class UserActivityReport
         {
             public int userId { get; set; }
+            public int userIdCount { get; set; }
             public int LoginCount { get; set; }
             public int LogoutCount { get; set; }
             public int UsernameChangedCount { get; set; }
@@ -30,27 +32,12 @@ namespace BaseApi.Services
                 {
                     throw new KeyNotFoundException("Belirtilen userId'de bir kullanıcı bulunamadı.");
                 }
-                foreach (var userActivity in userActivities)
-                {
-                    foreach (var evt in userActivity.Events)
-                    {
-                        switch (evt.Action)
-                        {
-                            case Action.Login:
-                                userActivityReport.LoginCount++;
-                                break;
-                            case Action.Logout:
-                                userActivityReport.LogoutCount++;
-                                break;
-                            case Action.UsernameChanged:
-                                userActivityReport.UsernameChangedCount++;
-                                break;
-                        }
-                    }
-                    userActivityReport.userId = userActivity.userId;
-                }
+                userActivityReport.userId = userId;
+                userActivityReport.LoginCount = userActivities.SelectMany(ua => ua.Events).Count(e => e.Action == Action.Login);
+                userActivityReport.LogoutCount = userActivities.SelectMany(ua => ua.Events).Count(e => e.Action == Action.Logout);
+                userActivityReport.UsernameChangedCount = userActivities.SelectMany(ua => ua.Events).Count(e => e.Action == Action.UsernameChanged);
 
-                    return userActivityReport;
+                return userActivityReport;
             }
             catch (Exception ex)
             {
@@ -61,27 +48,11 @@ namespace BaseApi.Services
         {
             var userActivityReport = new UserActivityReport();
             var usersActivities = await _userActivityRepository.GetAllActivity();
-            var uniqueUserIds = new HashSet<int>();
-            foreach (var userActivity in usersActivities)
-            {
-                uniqueUserIds.Add(userActivity.userId);
-                foreach (var evt in userActivity.Events)
-                {
-                    switch (evt.Action)
-                    {
-                        case Action.Login:
-                            userActivityReport.LoginCount++;
-                            break;
-                        case Action.Logout:
-                            userActivityReport.LogoutCount++;
-                            break;
-                        case Action.UsernameChanged:
-                            userActivityReport.UsernameChangedCount++;
-                            break;
-                    }
-                }
-            }
-            userActivityReport.userId = uniqueUserIds.Count;
+            userActivityReport.userIdCount = usersActivities.Distinct().Count(ua => ua.userId == ua.userId);
+            userActivityReport.LoginCount = usersActivities.SelectMany(ua => ua.Events).Count(e => e.Action == Action.Login);
+            userActivityReport.LogoutCount = usersActivities.SelectMany(ua => ua.Events).Count(e => e.Action == Action.Logout);
+            userActivityReport.UsernameChangedCount = usersActivities.SelectMany(ua => ua.Events).Count(e => e.Action == Action.UsernameChanged);
+
             return userActivityReport;
         }
     }

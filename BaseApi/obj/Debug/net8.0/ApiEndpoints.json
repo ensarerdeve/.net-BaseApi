@@ -536,6 +536,32 @@
     ]
   },
   {
+    "ContainingType": "BaseApi.Controllers.UserActivityController",
+    "Method": "ConvertReportsToJson",
+    "RelativePath": "UserActivity/DataCheck",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BaseApi.Controllers.UserActivityController",
+    "Method": "MonthlyCheck",
+    "RelativePath": "UserActivity/monthlyReport/{monthNumber}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "monthNumber",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "BaseApi.Controllers.UserController",
     "Method": "GetUserByUsername",
     "RelativePath": "username/{username}",

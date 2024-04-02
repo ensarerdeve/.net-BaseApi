@@ -26,6 +26,7 @@ builder.Services.AddScoped<FollowService>();
 builder.Services.AddScoped<UserService>();
 builder.Services.AddScoped<ItemService>();
 builder.Services.AddScoped<PostService>();
+builder.Services.AddScoped<UserActivityServiceDTO>();
 
 
 
