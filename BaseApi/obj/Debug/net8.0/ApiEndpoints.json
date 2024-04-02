@@ -490,6 +490,52 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "BaseApi.Controllers.UserActivityController",
+    "Method": "GetAllReportsOfAllUsers",
+    "RelativePath": "UserActivity",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "BaseApi.Models.UserActivity",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "BaseApi.Controllers.UserActivityController",
+    "Method": "GetReport",
+    "RelativePath": "UserActivity/{userId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "BaseApi.Models.UserActivity",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "BaseApi.Controllers.UserController",
     "Method": "GetUserByUsername",
     "RelativePath": "username/{username}",

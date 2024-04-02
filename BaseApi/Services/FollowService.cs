@@ -33,8 +33,17 @@ namespace BaseApi.Services
         }
         public async Task<bool> UpdateFollow(int id, Follow updatedFollow)
         {
-            await _repository.UpdateFollow(id, updatedFollow);
-            return true;
+            var user = await _userService.GetByUsername(updatedFollow.user);
+            var followedUsername = await _userService.GetByUsername(updatedFollow.followedUsername);
+            if(user != null && followedUsername != null)
+            {
+                await _repository.UpdateFollow(id, updatedFollow);
+                return true;
+            }
+            else
+            {
+                throw new KeyNotFoundException("Yanlış veya hatalı kullanıcı adı.");
+            }
         }
         public async Task<bool> DeleteFollow(int id)
         {

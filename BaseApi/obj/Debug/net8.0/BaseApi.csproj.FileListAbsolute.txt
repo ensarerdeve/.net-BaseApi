@@ -90,10 +90,6 @@ C:\Users\aytug\OneDrive\Belgeler\GitHub\.net-BaseApi\BaseApi\obj\Debug\net8.0\sc
 C:\Users\aytug\OneDrive\Belgeler\GitHub\.net-BaseApi\BaseApi\obj\Debug\net8.0\BaseApi.csproj.Up2Date
 C:\Users\aytug\OneDrive\Belgeler\GitHub\.net-BaseApi\BaseApi\obj\Debug\net8.0\BaseApi.genruntimeconfig.cache
 C:\Users\aytug\OneDrive\Belgeler\GitHub\.net-BaseApi\BaseApi\obj\Debug\net8.0\ref\BaseApi.dll
-C:\Users\aytug\source\repos\BaseApi\BaseApi\bin\Debug\net8.0\System.Data.SqlClient.dll
-C:\Users\aytug\source\repos\BaseApi\BaseApi\bin\Debug\net8.0\runtimes\win-arm64\native\sni.dll
-C:\Users\aytug\source\repos\BaseApi\BaseApi\bin\Debug\net8.0\runtimes\win-x64\native\sni.dll
-C:\Users\aytug\source\repos\BaseApi\BaseApi\bin\Debug\net8.0\runtimes\win-x86\native\sni.dll
-C:\Users\aytug\source\repos\BaseApi\BaseApi\bin\Debug\net8.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
-C:\Users\aytug\source\repos\BaseApi\BaseApi\bin\Debug\net8.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\aytug\OneDrive\Belgeler\GitHub\.net-BaseApi\BaseApi\bin\Debug\net8.0\MySqlConnector.dll
+C:\Users\aytug\source\repos\BaseApi\BaseApi\bin\Debug\net8.0\MySqlConnector.dll
+C:\Users\aytug\source\repos\BaseApi\BaseApi\bin\Debug\net8.0\Data\user_activity.json

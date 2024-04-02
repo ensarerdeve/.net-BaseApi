@@ -29,20 +29,20 @@ namespace BaseApi.Controllers
         [HttpPost]
         public async Task<ActionResult> CreateFollow(Follow newFollow)
         {
-            var follow = await _followService.CreateFollow(newFollow);
-            return Ok(newFollow);
+            var createdFollow = await _followService.CreateFollow(newFollow);
+            return Ok(createdFollow);
         }
         [HttpPut("{id}")]
         public async Task<IActionResult> UpdateFollow(int id ,Follow updatedFollow)
         {
             var follow = await _followService.UpdateFollow(id, updatedFollow);
-            return Ok();
+            return Ok(follow);
         }
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {
-            await _followService.DeleteFollow(id);
-            return Ok();
+            var deleteFollow = await _followService.DeleteFollow(id);
+            return Ok(deleteFollow);
         }
     }
 }
