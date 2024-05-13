@@ -1,94 +1,141 @@
-C:\Users\aytug\source\repos\BaseApi\BaseApi\bin\Debug\net8.0\appsettings.Development.json
-C:\Users\aytug\source\repos\BaseApi\BaseApi\bin\Debug\net8.0\appsettings.json
-C:\Users\aytug\source\repos\BaseApi\BaseApi\bin\Debug\net8.0\BaseApi.exe
-C:\Users\aytug\source\repos\BaseApi\BaseApi\bin\Debug\net8.0\BaseApi.deps.json
-C:\Users\aytug\source\repos\BaseApi\BaseApi\bin\Debug\net8.0\BaseApi.runtimeconfig.json
-C:\Users\aytug\source\repos\BaseApi\BaseApi\bin\Debug\net8.0\BaseApi.dll
-C:\Users\aytug\source\repos\BaseApi\BaseApi\bin\Debug\net8.0\BaseApi.pdb
-C:\Users\aytug\source\repos\BaseApi\BaseApi\bin\Debug\net8.0\AWSSDK.Core.dll
-C:\Users\aytug\source\repos\BaseApi\BaseApi\bin\Debug\net8.0\AWSSDK.SecurityToken.dll
-C:\Users\aytug\source\repos\BaseApi\BaseApi\bin\Debug\net8.0\DnsClient.dll
-C:\Users\aytug\source\repos\BaseApi\BaseApi\bin\Debug\net8.0\Microsoft.OpenApi.dll
-C:\Users\aytug\source\repos\BaseApi\BaseApi\bin\Debug\net8.0\MongoDB.Bson.dll
-C:\Users\aytug\source\repos\BaseApi\BaseApi\bin\Debug\net8.0\MongoDB.Driver.dll
-C:\Users\aytug\source\repos\BaseApi\BaseApi\bin\Debug\net8.0\MongoDB.Driver.Core.dll
-C:\Users\aytug\source\repos\BaseApi\BaseApi\bin\Debug\net8.0\MongoDB.Libmongocrypt.dll
-C:\Users\aytug\source\repos\BaseApi\BaseApi\bin\Debug\net8.0\SharpCompress.dll
-C:\Users\aytug\source\repos\BaseApi\BaseApi\bin\Debug\net8.0\Snappier.dll
-C:\Users\aytug\source\repos\BaseApi\BaseApi\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
-C:\Users\aytug\source\repos\BaseApi\BaseApi\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
-C:\Users\aytug\source\repos\BaseApi\BaseApi\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
-C:\Users\aytug\source\repos\BaseApi\BaseApi\bin\Debug\net8.0\ZstdSharp.dll
-C:\Users\aytug\source\repos\BaseApi\BaseApi\bin\Debug\net8.0\runtimes\linux\native\libmongocrypt.so
-C:\Users\aytug\source\repos\BaseApi\BaseApi\bin\Debug\net8.0\runtimes\osx\native\libmongocrypt.dylib
-C:\Users\aytug\source\repos\BaseApi\BaseApi\bin\Debug\net8.0\runtimes\win\native\mongocrypt.dll
-C:\Users\aytug\source\repos\BaseApi\BaseApi\obj\Debug\net8.0\BaseApi.csproj.AssemblyReference.cache
-C:\Users\aytug\source\repos\BaseApi\BaseApi\obj\Debug\net8.0\BaseApi.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\aytug\source\repos\BaseApi\BaseApi\obj\Debug\net8.0\BaseApi.AssemblyInfoInputs.cache
-C:\Users\aytug\source\repos\BaseApi\BaseApi\obj\Debug\net8.0\BaseApi.AssemblyInfo.cs
-C:\Users\aytug\source\repos\BaseApi\BaseApi\obj\Debug\net8.0\BaseApi.csproj.CoreCompileInputs.cache
-C:\Users\aytug\source\repos\BaseApi\BaseApi\obj\Debug\net8.0\BaseApi.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\aytug\source\repos\BaseApi\BaseApi\obj\Debug\net8.0\BaseApi.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\aytug\source\repos\BaseApi\BaseApi\obj\Debug\net8.0\staticwebassets.build.json
-C:\Users\aytug\source\repos\BaseApi\BaseApi\obj\Debug\net8.0\staticwebassets.development.json
-C:\Users\aytug\source\repos\BaseApi\BaseApi\obj\Debug\net8.0\staticwebassets\msbuild.BaseApi.Microsoft.AspNetCore.StaticWebAssets.props
-C:\Users\aytug\source\repos\BaseApi\BaseApi\obj\Debug\net8.0\staticwebassets\msbuild.build.BaseApi.props
-C:\Users\aytug\source\repos\BaseApi\BaseApi\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.BaseApi.props
-C:\Users\aytug\source\repos\BaseApi\BaseApi\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.BaseApi.props
-C:\Users\aytug\source\repos\BaseApi\BaseApi\obj\Debug\net8.0\staticwebassets.pack.json
-C:\Users\aytug\source\repos\BaseApi\BaseApi\obj\Debug\net8.0\scopedcss\bundle\BaseApi.styles.css
-C:\Users\aytug\source\repos\BaseApi\BaseApi\obj\Debug\net8.0\BaseApi.csproj.Up2Date
-C:\Users\aytug\source\repos\BaseApi\BaseApi\obj\Debug\net8.0\BaseApi.dll
-C:\Users\aytug\source\repos\BaseApi\BaseApi\obj\Debug\net8.0\refint\BaseApi.dll
-C:\Users\aytug\source\repos\BaseApi\BaseApi\obj\Debug\net8.0\BaseApi.pdb
-C:\Users\aytug\source\repos\BaseApi\BaseApi\obj\Debug\net8.0\BaseApi.genruntimeconfig.cache
-C:\Users\aytug\source\repos\BaseApi\BaseApi\obj\Debug\net8.0\ref\BaseApi.dll
-C:\Users\aytug\source\repos\BaseApi\BaseApi\obj\Debug\net8.0\BaseApi.sourcelink.json
-C:\Users\aytug\OneDrive\Belgeler\GitHub\.net-BaseApi\BaseApi\obj\Debug\net8.0\BaseApi.csproj.AssemblyReference.cache
-C:\Users\aytug\OneDrive\Belgeler\GitHub\.net-BaseApi\BaseApi\obj\Debug\net8.0\BaseApi.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\aytug\OneDrive\Belgeler\GitHub\.net-BaseApi\BaseApi\obj\Debug\net8.0\BaseApi.AssemblyInfoInputs.cache
-C:\Users\aytug\OneDrive\Belgeler\GitHub\.net-BaseApi\BaseApi\obj\Debug\net8.0\BaseApi.AssemblyInfo.cs
-C:\Users\aytug\OneDrive\Belgeler\GitHub\.net-BaseApi\BaseApi\obj\Debug\net8.0\BaseApi.csproj.CoreCompileInputs.cache
-C:\Users\aytug\OneDrive\Belgeler\GitHub\.net-BaseApi\BaseApi\obj\Debug\net8.0\BaseApi.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\aytug\OneDrive\Belgeler\GitHub\.net-BaseApi\BaseApi\obj\Debug\net8.0\BaseApi.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\aytug\OneDrive\Belgeler\GitHub\.net-BaseApi\BaseApi\obj\Debug\net8.0\BaseApi.sourcelink.json
-C:\Users\aytug\OneDrive\Belgeler\GitHub\.net-BaseApi\BaseApi\obj\Debug\net8.0\BaseApi.dll
-C:\Users\aytug\OneDrive\Belgeler\GitHub\.net-BaseApi\BaseApi\obj\Debug\net8.0\refint\BaseApi.dll
-C:\Users\aytug\OneDrive\Belgeler\GitHub\.net-BaseApi\BaseApi\obj\Debug\net8.0\BaseApi.pdb
-C:\Users\aytug\OneDrive\Belgeler\GitHub\.net-BaseApi\BaseApi\bin\Debug\net8.0\appsettings.Development.json
-C:\Users\aytug\OneDrive\Belgeler\GitHub\.net-BaseApi\BaseApi\bin\Debug\net8.0\appsettings.json
-C:\Users\aytug\OneDrive\Belgeler\GitHub\.net-BaseApi\BaseApi\bin\Debug\net8.0\BaseApi.exe
-C:\Users\aytug\OneDrive\Belgeler\GitHub\.net-BaseApi\BaseApi\bin\Debug\net8.0\BaseApi.deps.json
-C:\Users\aytug\OneDrive\Belgeler\GitHub\.net-BaseApi\BaseApi\bin\Debug\net8.0\BaseApi.runtimeconfig.json
-C:\Users\aytug\OneDrive\Belgeler\GitHub\.net-BaseApi\BaseApi\bin\Debug\net8.0\BaseApi.dll
-C:\Users\aytug\OneDrive\Belgeler\GitHub\.net-BaseApi\BaseApi\bin\Debug\net8.0\BaseApi.pdb
-C:\Users\aytug\OneDrive\Belgeler\GitHub\.net-BaseApi\BaseApi\bin\Debug\net8.0\AWSSDK.Core.dll
-C:\Users\aytug\OneDrive\Belgeler\GitHub\.net-BaseApi\BaseApi\bin\Debug\net8.0\AWSSDK.SecurityToken.dll
-C:\Users\aytug\OneDrive\Belgeler\GitHub\.net-BaseApi\BaseApi\bin\Debug\net8.0\DnsClient.dll
-C:\Users\aytug\OneDrive\Belgeler\GitHub\.net-BaseApi\BaseApi\bin\Debug\net8.0\Microsoft.OpenApi.dll
-C:\Users\aytug\OneDrive\Belgeler\GitHub\.net-BaseApi\BaseApi\bin\Debug\net8.0\MongoDB.Bson.dll
-C:\Users\aytug\OneDrive\Belgeler\GitHub\.net-BaseApi\BaseApi\bin\Debug\net8.0\MongoDB.Driver.dll
-C:\Users\aytug\OneDrive\Belgeler\GitHub\.net-BaseApi\BaseApi\bin\Debug\net8.0\MongoDB.Driver.Core.dll
-C:\Users\aytug\OneDrive\Belgeler\GitHub\.net-BaseApi\BaseApi\bin\Debug\net8.0\MongoDB.Libmongocrypt.dll
-C:\Users\aytug\OneDrive\Belgeler\GitHub\.net-BaseApi\BaseApi\bin\Debug\net8.0\SharpCompress.dll
-C:\Users\aytug\OneDrive\Belgeler\GitHub\.net-BaseApi\BaseApi\bin\Debug\net8.0\Snappier.dll
-C:\Users\aytug\OneDrive\Belgeler\GitHub\.net-BaseApi\BaseApi\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
-C:\Users\aytug\OneDrive\Belgeler\GitHub\.net-BaseApi\BaseApi\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
-C:\Users\aytug\OneDrive\Belgeler\GitHub\.net-BaseApi\BaseApi\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
-C:\Users\aytug\OneDrive\Belgeler\GitHub\.net-BaseApi\BaseApi\bin\Debug\net8.0\ZstdSharp.dll
-C:\Users\aytug\OneDrive\Belgeler\GitHub\.net-BaseApi\BaseApi\bin\Debug\net8.0\runtimes\linux\native\libmongocrypt.so
-C:\Users\aytug\OneDrive\Belgeler\GitHub\.net-BaseApi\BaseApi\bin\Debug\net8.0\runtimes\osx\native\libmongocrypt.dylib
-C:\Users\aytug\OneDrive\Belgeler\GitHub\.net-BaseApi\BaseApi\bin\Debug\net8.0\runtimes\win\native\mongocrypt.dll
-C:\Users\aytug\OneDrive\Belgeler\GitHub\.net-BaseApi\BaseApi\obj\Debug\net8.0\staticwebassets.build.json
-C:\Users\aytug\OneDrive\Belgeler\GitHub\.net-BaseApi\BaseApi\obj\Debug\net8.0\staticwebassets.development.json
-C:\Users\aytug\OneDrive\Belgeler\GitHub\.net-BaseApi\BaseApi\obj\Debug\net8.0\staticwebassets\msbuild.BaseApi.Microsoft.AspNetCore.StaticWebAssets.props
-C:\Users\aytug\OneDrive\Belgeler\GitHub\.net-BaseApi\BaseApi\obj\Debug\net8.0\staticwebassets\msbuild.build.BaseApi.props
-C:\Users\aytug\OneDrive\Belgeler\GitHub\.net-BaseApi\BaseApi\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.BaseApi.props
-C:\Users\aytug\OneDrive\Belgeler\GitHub\.net-BaseApi\BaseApi\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.BaseApi.props
-C:\Users\aytug\OneDrive\Belgeler\GitHub\.net-BaseApi\BaseApi\obj\Debug\net8.0\staticwebassets.pack.json
-C:\Users\aytug\OneDrive\Belgeler\GitHub\.net-BaseApi\BaseApi\obj\Debug\net8.0\scopedcss\bundle\BaseApi.styles.css
-C:\Users\aytug\OneDrive\Belgeler\GitHub\.net-BaseApi\BaseApi\obj\Debug\net8.0\BaseApi.csproj.Up2Date
-C:\Users\aytug\OneDrive\Belgeler\GitHub\.net-BaseApi\BaseApi\obj\Debug\net8.0\BaseApi.genruntimeconfig.cache
-C:\Users\aytug\OneDrive\Belgeler\GitHub\.net-BaseApi\BaseApi\obj\Debug\net8.0\ref\BaseApi.dll
-C:\Users\aytug\OneDrive\Belgeler\GitHub\.net-BaseApi\BaseApi\bin\Debug\net8.0\MySqlConnector.dll
-C:\Users\aytug\source\repos\BaseApi\BaseApi\bin\Debug\net8.0\MySqlConnector.dll
+C:/Users/aytug/source/repos/BaseApi/BaseApi/bin/Debug/net8.0/appsettings.Development.json
+C:/Users/aytug/source/repos/BaseApi/BaseApi/bin/Debug/net8.0/appsettings.json
+C:/Users/aytug/source/repos/BaseApi/BaseApi/bin/Debug/net8.0/BaseApi.exe
+C:/Users/aytug/source/repos/BaseApi/BaseApi/bin/Debug/net8.0/BaseApi.deps.json
+C:/Users/aytug/source/repos/BaseApi/BaseApi/bin/Debug/net8.0/BaseApi.runtimeconfig.json
+C:/Users/aytug/source/repos/BaseApi/BaseApi/bin/Debug/net8.0/BaseApi.dll
+C:/Users/aytug/source/repos/BaseApi/BaseApi/bin/Debug/net8.0/BaseApi.pdb
+C:/Users/aytug/source/repos/BaseApi/BaseApi/bin/Debug/net8.0/AWSSDK.Core.dll
+C:/Users/aytug/source/repos/BaseApi/BaseApi/bin/Debug/net8.0/AWSSDK.SecurityToken.dll
+C:/Users/aytug/source/repos/BaseApi/BaseApi/bin/Debug/net8.0/DnsClient.dll
+C:/Users/aytug/source/repos/BaseApi/BaseApi/bin/Debug/net8.0/Microsoft.OpenApi.dll
+C:/Users/aytug/source/repos/BaseApi/BaseApi/bin/Debug/net8.0/MongoDB.Bson.dll
+C:/Users/aytug/source/repos/BaseApi/BaseApi/bin/Debug/net8.0/MongoDB.Driver.dll
+C:/Users/aytug/source/repos/BaseApi/BaseApi/bin/Debug/net8.0/MongoDB.Driver.Core.dll
+C:/Users/aytug/source/repos/BaseApi/BaseApi/bin/Debug/net8.0/MongoDB.Libmongocrypt.dll
+C:/Users/aytug/source/repos/BaseApi/BaseApi/bin/Debug/net8.0/SharpCompress.dll
+C:/Users/aytug/source/repos/BaseApi/BaseApi/bin/Debug/net8.0/Snappier.dll
+C:/Users/aytug/source/repos/BaseApi/BaseApi/bin/Debug/net8.0/Swashbuckle.AspNetCore.Swagger.dll
+C:/Users/aytug/source/repos/BaseApi/BaseApi/bin/Debug/net8.0/Swashbuckle.AspNetCore.SwaggerGen.dll
+C:/Users/aytug/source/repos/BaseApi/BaseApi/bin/Debug/net8.0/Swashbuckle.AspNetCore.SwaggerUI.dll
+C:/Users/aytug/source/repos/BaseApi/BaseApi/bin/Debug/net8.0/ZstdSharp.dll
+C:/Users/aytug/source/repos/BaseApi/BaseApi/bin/Debug/net8.0/runtimes/linux/native/libmongocrypt.so
+C:/Users/aytug/source/repos/BaseApi/BaseApi/bin/Debug/net8.0/runtimes/osx/native/libmongocrypt.dylib
+C:/Users/aytug/source/repos/BaseApi/BaseApi/bin/Debug/net8.0/runtimes/win/native/mongocrypt.dll
+C:/Users/aytug/source/repos/BaseApi/BaseApi/obj/Debug/net8.0/BaseApi.csproj.AssemblyReference.cache
+C:/Users/aytug/source/repos/BaseApi/BaseApi/obj/Debug/net8.0/BaseApi.GeneratedMSBuildEditorConfig.editorconfig
+C:/Users/aytug/source/repos/BaseApi/BaseApi/obj/Debug/net8.0/BaseApi.AssemblyInfoInputs.cache
+C:/Users/aytug/source/repos/BaseApi/BaseApi/obj/Debug/net8.0/BaseApi.AssemblyInfo.cs
+C:/Users/aytug/source/repos/BaseApi/BaseApi/obj/Debug/net8.0/BaseApi.csproj.CoreCompileInputs.cache
+C:/Users/aytug/source/repos/BaseApi/BaseApi/obj/Debug/net8.0/BaseApi.MvcApplicationPartsAssemblyInfo.cs
+C:/Users/aytug/source/repos/BaseApi/BaseApi/obj/Debug/net8.0/BaseApi.MvcApplicationPartsAssemblyInfo.cache
+C:/Users/aytug/source/repos/BaseApi/BaseApi/obj/Debug/net8.0/staticwebassets.build.json
+C:/Users/aytug/source/repos/BaseApi/BaseApi/obj/Debug/net8.0/staticwebassets.development.json
+C:/Users/aytug/source/repos/BaseApi/BaseApi/obj/Debug/net8.0/staticwebassets/msbuild.BaseApi.Microsoft.AspNetCore.StaticWebAssets.props
+C:/Users/aytug/source/repos/BaseApi/BaseApi/obj/Debug/net8.0/staticwebassets/msbuild.build.BaseApi.props
+C:/Users/aytug/source/repos/BaseApi/BaseApi/obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.BaseApi.props
+C:/Users/aytug/source/repos/BaseApi/BaseApi/obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.BaseApi.props
+C:/Users/aytug/source/repos/BaseApi/BaseApi/obj/Debug/net8.0/staticwebassets.pack.json
+C:/Users/aytug/source/repos/BaseApi/BaseApi/obj/Debug/net8.0/scopedcss/bundle/BaseApi.styles.css
+C:/Users/aytug/source/repos/BaseApi/BaseApi/obj/Debug/net8.0/BaseApi.csproj.Up2Date
+C:/Users/aytug/source/repos/BaseApi/BaseApi/obj/Debug/net8.0/BaseApi.dll
+C:/Users/aytug/source/repos/BaseApi/BaseApi/obj/Debug/net8.0/refint/BaseApi.dll
+C:/Users/aytug/source/repos/BaseApi/BaseApi/obj/Debug/net8.0/BaseApi.pdb
+C:/Users/aytug/source/repos/BaseApi/BaseApi/obj/Debug/net8.0/BaseApi.genruntimeconfig.cache
+C:/Users/aytug/source/repos/BaseApi/BaseApi/obj/Debug/net8.0/ref/BaseApi.dll
+C:/Users/aytug/source/repos/BaseApi/BaseApi/obj/Debug/net8.0/BaseApi.sourcelink.json
+C:/Users/aytug/OneDrive/Belgeler/GitHub/.net-BaseApi/BaseApi/obj/Debug/net8.0/BaseApi.csproj.AssemblyReference.cache
+C:/Users/aytug/OneDrive/Belgeler/GitHub/.net-BaseApi/BaseApi/obj/Debug/net8.0/BaseApi.GeneratedMSBuildEditorConfig.editorconfig
+C:/Users/aytug/OneDrive/Belgeler/GitHub/.net-BaseApi/BaseApi/obj/Debug/net8.0/BaseApi.AssemblyInfoInputs.cache
+C:/Users/aytug/OneDrive/Belgeler/GitHub/.net-BaseApi/BaseApi/obj/Debug/net8.0/BaseApi.AssemblyInfo.cs
+C:/Users/aytug/OneDrive/Belgeler/GitHub/.net-BaseApi/BaseApi/obj/Debug/net8.0/BaseApi.csproj.CoreCompileInputs.cache
+C:/Users/aytug/OneDrive/Belgeler/GitHub/.net-BaseApi/BaseApi/obj/Debug/net8.0/BaseApi.MvcApplicationPartsAssemblyInfo.cs
+C:/Users/aytug/OneDrive/Belgeler/GitHub/.net-BaseApi/BaseApi/obj/Debug/net8.0/BaseApi.MvcApplicationPartsAssemblyInfo.cache
+C:/Users/aytug/OneDrive/Belgeler/GitHub/.net-BaseApi/BaseApi/obj/Debug/net8.0/BaseApi.sourcelink.json
+C:/Users/aytug/OneDrive/Belgeler/GitHub/.net-BaseApi/BaseApi/obj/Debug/net8.0/BaseApi.dll
+C:/Users/aytug/OneDrive/Belgeler/GitHub/.net-BaseApi/BaseApi/obj/Debug/net8.0/refint/BaseApi.dll
+C:/Users/aytug/OneDrive/Belgeler/GitHub/.net-BaseApi/BaseApi/obj/Debug/net8.0/BaseApi.pdb
+C:/Users/aytug/OneDrive/Belgeler/GitHub/.net-BaseApi/BaseApi/bin/Debug/net8.0/appsettings.Development.json
+C:/Users/aytug/OneDrive/Belgeler/GitHub/.net-BaseApi/BaseApi/bin/Debug/net8.0/appsettings.json
+C:/Users/aytug/OneDrive/Belgeler/GitHub/.net-BaseApi/BaseApi/bin/Debug/net8.0/BaseApi.exe
+C:/Users/aytug/OneDrive/Belgeler/GitHub/.net-BaseApi/BaseApi/bin/Debug/net8.0/BaseApi.deps.json
+C:/Users/aytug/OneDrive/Belgeler/GitHub/.net-BaseApi/BaseApi/bin/Debug/net8.0/BaseApi.runtimeconfig.json
+C:/Users/aytug/OneDrive/Belgeler/GitHub/.net-BaseApi/BaseApi/bin/Debug/net8.0/BaseApi.dll
+C:/Users/aytug/OneDrive/Belgeler/GitHub/.net-BaseApi/BaseApi/bin/Debug/net8.0/BaseApi.pdb
+C:/Users/aytug/OneDrive/Belgeler/GitHub/.net-BaseApi/BaseApi/bin/Debug/net8.0/AWSSDK.Core.dll
+C:/Users/aytug/OneDrive/Belgeler/GitHub/.net-BaseApi/BaseApi/bin/Debug/net8.0/AWSSDK.SecurityToken.dll
+C:/Users/aytug/OneDrive/Belgeler/GitHub/.net-BaseApi/BaseApi/bin/Debug/net8.0/DnsClient.dll
+C:/Users/aytug/OneDrive/Belgeler/GitHub/.net-BaseApi/BaseApi/bin/Debug/net8.0/Microsoft.OpenApi.dll
+C:/Users/aytug/OneDrive/Belgeler/GitHub/.net-BaseApi/BaseApi/bin/Debug/net8.0/MongoDB.Bson.dll
+C:/Users/aytug/OneDrive/Belgeler/GitHub/.net-BaseApi/BaseApi/bin/Debug/net8.0/MongoDB.Driver.dll
+C:/Users/aytug/OneDrive/Belgeler/GitHub/.net-BaseApi/BaseApi/bin/Debug/net8.0/MongoDB.Driver.Core.dll
+C:/Users/aytug/OneDrive/Belgeler/GitHub/.net-BaseApi/BaseApi/bin/Debug/net8.0/MongoDB.Libmongocrypt.dll
+C:/Users/aytug/OneDrive/Belgeler/GitHub/.net-BaseApi/BaseApi/bin/Debug/net8.0/SharpCompress.dll
+C:/Users/aytug/OneDrive/Belgeler/GitHub/.net-BaseApi/BaseApi/bin/Debug/net8.0/Snappier.dll
+C:/Users/aytug/OneDrive/Belgeler/GitHub/.net-BaseApi/BaseApi/bin/Debug/net8.0/Swashbuckle.AspNetCore.Swagger.dll
+C:/Users/aytug/OneDrive/Belgeler/GitHub/.net-BaseApi/BaseApi/bin/Debug/net8.0/Swashbuckle.AspNetCore.SwaggerGen.dll
+C:/Users/aytug/OneDrive/Belgeler/GitHub/.net-BaseApi/BaseApi/bin/Debug/net8.0/Swashbuckle.AspNetCore.SwaggerUI.dll
+C:/Users/aytug/OneDrive/Belgeler/GitHub/.net-BaseApi/BaseApi/bin/Debug/net8.0/ZstdSharp.dll
+C:/Users/aytug/OneDrive/Belgeler/GitHub/.net-BaseApi/BaseApi/bin/Debug/net8.0/runtimes/linux/native/libmongocrypt.so
+C:/Users/aytug/OneDrive/Belgeler/GitHub/.net-BaseApi/BaseApi/bin/Debug/net8.0/runtimes/osx/native/libmongocrypt.dylib
+C:/Users/aytug/OneDrive/Belgeler/GitHub/.net-BaseApi/BaseApi/bin/Debug/net8.0/runtimes/win/native/mongocrypt.dll
+C:/Users/aytug/OneDrive/Belgeler/GitHub/.net-BaseApi/BaseApi/obj/Debug/net8.0/staticwebassets.build.json
+C:/Users/aytug/OneDrive/Belgeler/GitHub/.net-BaseApi/BaseApi/obj/Debug/net8.0/staticwebassets.development.json
+C:/Users/aytug/OneDrive/Belgeler/GitHub/.net-BaseApi/BaseApi/obj/Debug/net8.0/staticwebassets/msbuild.BaseApi.Microsoft.AspNetCore.StaticWebAssets.props
+C:/Users/aytug/OneDrive/Belgeler/GitHub/.net-BaseApi/BaseApi/obj/Debug/net8.0/staticwebassets/msbuild.build.BaseApi.props
+C:/Users/aytug/OneDrive/Belgeler/GitHub/.net-BaseApi/BaseApi/obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.BaseApi.props
+C:/Users/aytug/OneDrive/Belgeler/GitHub/.net-BaseApi/BaseApi/obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.BaseApi.props
+C:/Users/aytug/OneDrive/Belgeler/GitHub/.net-BaseApi/BaseApi/obj/Debug/net8.0/staticwebassets.pack.json
+C:/Users/aytug/OneDrive/Belgeler/GitHub/.net-BaseApi/BaseApi/obj/Debug/net8.0/scopedcss/bundle/BaseApi.styles.css
+C:/Users/aytug/OneDrive/Belgeler/GitHub/.net-BaseApi/BaseApi/obj/Debug/net8.0/BaseApi.csproj.Up2Date
+C:/Users/aytug/OneDrive/Belgeler/GitHub/.net-BaseApi/BaseApi/obj/Debug/net8.0/BaseApi.genruntimeconfig.cache
+C:/Users/aytug/OneDrive/Belgeler/GitHub/.net-BaseApi/BaseApi/obj/Debug/net8.0/ref/BaseApi.dll
+C:/Users/aytug/OneDrive/Belgeler/GitHub/.net-BaseApi/BaseApi/bin/Debug/net8.0/MySqlConnector.dll
+C:/Users/aytug/source/repos/BaseApi/BaseApi/bin/Debug/net8.0/MySqlConnector.dll
+/Users/ensarerdeve/Documents/VSC Projects/.net-BaseApi/BaseApi/bin/Debug/net8.0/appsettings.Development.json
+/Users/ensarerdeve/Documents/VSC Projects/.net-BaseApi/BaseApi/bin/Debug/net8.0/appsettings.json
+/Users/ensarerdeve/Documents/VSC Projects/.net-BaseApi/BaseApi/bin/Debug/net8.0/BaseApi
+/Users/ensarerdeve/Documents/VSC Projects/.net-BaseApi/BaseApi/bin/Debug/net8.0/BaseApi.deps.json
+/Users/ensarerdeve/Documents/VSC Projects/.net-BaseApi/BaseApi/bin/Debug/net8.0/BaseApi.runtimeconfig.json
+/Users/ensarerdeve/Documents/VSC Projects/.net-BaseApi/BaseApi/bin/Debug/net8.0/BaseApi.dll
+/Users/ensarerdeve/Documents/VSC Projects/.net-BaseApi/BaseApi/bin/Debug/net8.0/BaseApi.pdb
+/Users/ensarerdeve/Documents/VSC Projects/.net-BaseApi/BaseApi/bin/Debug/net8.0/AWSSDK.Core.dll
+/Users/ensarerdeve/Documents/VSC Projects/.net-BaseApi/BaseApi/bin/Debug/net8.0/AWSSDK.SecurityToken.dll
+/Users/ensarerdeve/Documents/VSC Projects/.net-BaseApi/BaseApi/bin/Debug/net8.0/DnsClient.dll
+/Users/ensarerdeve/Documents/VSC Projects/.net-BaseApi/BaseApi/bin/Debug/net8.0/Microsoft.OpenApi.dll
+/Users/ensarerdeve/Documents/VSC Projects/.net-BaseApi/BaseApi/bin/Debug/net8.0/MongoDB.Bson.dll
+/Users/ensarerdeve/Documents/VSC Projects/.net-BaseApi/BaseApi/bin/Debug/net8.0/MongoDB.Driver.dll
+/Users/ensarerdeve/Documents/VSC Projects/.net-BaseApi/BaseApi/bin/Debug/net8.0/MongoDB.Driver.Core.dll
+/Users/ensarerdeve/Documents/VSC Projects/.net-BaseApi/BaseApi/bin/Debug/net8.0/MongoDB.Libmongocrypt.dll
+/Users/ensarerdeve/Documents/VSC Projects/.net-BaseApi/BaseApi/bin/Debug/net8.0/MySqlConnector.dll
+/Users/ensarerdeve/Documents/VSC Projects/.net-BaseApi/BaseApi/bin/Debug/net8.0/SharpCompress.dll
+/Users/ensarerdeve/Documents/VSC Projects/.net-BaseApi/BaseApi/bin/Debug/net8.0/Snappier.dll
+/Users/ensarerdeve/Documents/VSC Projects/.net-BaseApi/BaseApi/bin/Debug/net8.0/Swashbuckle.AspNetCore.Swagger.dll
+/Users/ensarerdeve/Documents/VSC Projects/.net-BaseApi/BaseApi/bin/Debug/net8.0/Swashbuckle.AspNetCore.SwaggerGen.dll
+/Users/ensarerdeve/Documents/VSC Projects/.net-BaseApi/BaseApi/bin/Debug/net8.0/Swashbuckle.AspNetCore.SwaggerUI.dll
+/Users/ensarerdeve/Documents/VSC Projects/.net-BaseApi/BaseApi/bin/Debug/net8.0/ZstdSharp.dll
+/Users/ensarerdeve/Documents/VSC Projects/.net-BaseApi/BaseApi/bin/Debug/net8.0/runtimes/linux/native/libmongocrypt.so
+/Users/ensarerdeve/Documents/VSC Projects/.net-BaseApi/BaseApi/bin/Debug/net8.0/runtimes/osx/native/libmongocrypt.dylib
+/Users/ensarerdeve/Documents/VSC Projects/.net-BaseApi/BaseApi/bin/Debug/net8.0/runtimes/win/native/mongocrypt.dll
+/Users/ensarerdeve/Documents/VSC Projects/.net-BaseApi/BaseApi/obj/Debug/net8.0/BaseApi.csproj.AssemblyReference.cache
+/Users/ensarerdeve/Documents/VSC Projects/.net-BaseApi/BaseApi/obj/Debug/net8.0/BaseApi.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ensarerdeve/Documents/VSC Projects/.net-BaseApi/BaseApi/obj/Debug/net8.0/BaseApi.AssemblyInfoInputs.cache
+/Users/ensarerdeve/Documents/VSC Projects/.net-BaseApi/BaseApi/obj/Debug/net8.0/BaseApi.AssemblyInfo.cs
+/Users/ensarerdeve/Documents/VSC Projects/.net-BaseApi/BaseApi/obj/Debug/net8.0/BaseApi.csproj.CoreCompileInputs.cache
+/Users/ensarerdeve/Documents/VSC Projects/.net-BaseApi/BaseApi/obj/Debug/net8.0/BaseApi.MvcApplicationPartsAssemblyInfo.cs
+/Users/ensarerdeve/Documents/VSC Projects/.net-BaseApi/BaseApi/obj/Debug/net8.0/BaseApi.MvcApplicationPartsAssemblyInfo.cache
+/Users/ensarerdeve/Documents/VSC Projects/.net-BaseApi/BaseApi/obj/Debug/net8.0/BaseApi.sourcelink.json
+/Users/ensarerdeve/Documents/VSC Projects/.net-BaseApi/BaseApi/obj/Debug/net8.0/staticwebassets.build.json
+/Users/ensarerdeve/Documents/VSC Projects/.net-BaseApi/BaseApi/obj/Debug/net8.0/staticwebassets.development.json
+/Users/ensarerdeve/Documents/VSC Projects/.net-BaseApi/BaseApi/obj/Debug/net8.0/staticwebassets/msbuild.BaseApi.Microsoft.AspNetCore.StaticWebAssets.props
+/Users/ensarerdeve/Documents/VSC Projects/.net-BaseApi/BaseApi/obj/Debug/net8.0/staticwebassets/msbuild.build.BaseApi.props
+/Users/ensarerdeve/Documents/VSC Projects/.net-BaseApi/BaseApi/obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.BaseApi.props
+/Users/ensarerdeve/Documents/VSC Projects/.net-BaseApi/BaseApi/obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.BaseApi.props
+/Users/ensarerdeve/Documents/VSC Projects/.net-BaseApi/BaseApi/obj/Debug/net8.0/staticwebassets.pack.json
+/Users/ensarerdeve/Documents/VSC Projects/.net-BaseApi/BaseApi/obj/Debug/net8.0/scopedcss/bundle/BaseApi.styles.css
+/Users/ensarerdeve/Documents/VSC Projects/.net-BaseApi/BaseApi/obj/Debug/net8.0/BaseApi.csproj.Up2Date
+/Users/ensarerdeve/Documents/VSC Projects/.net-BaseApi/BaseApi/obj/Debug/net8.0/BaseApi.dll
+/Users/ensarerdeve/Documents/VSC Projects/.net-BaseApi/BaseApi/obj/Debug/net8.0/refint/BaseApi.dll
+/Users/ensarerdeve/Documents/VSC Projects/.net-BaseApi/BaseApi/obj/Debug/net8.0/BaseApi.pdb
+/Users/ensarerdeve/Documents/VSC Projects/.net-BaseApi/BaseApi/obj/Debug/net8.0/BaseApi.genruntimeconfig.cache
+/Users/ensarerdeve/Documents/VSC Projects/.net-BaseApi/BaseApi/obj/Debug/net8.0/ref/BaseApi.dll
